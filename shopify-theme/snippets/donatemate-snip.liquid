@@ -1,0 +1,111 @@
+
+
+
+
+{% comment %}
+Its best not to edit this file. It is automatically generated and may be replaced.
+For more information, go to www.donatemate.app/support
+{% endcomment %}
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div id="DonateMate_form">
+
+    <label for='DonateMateInputField' style="margin-bottom: 10px;">Enter your Donation Amount ({{ shop.currency }})</label>
+    <div class="input-group">
+        <input id="DonateMateInputField" style="margin: auto; background-color: white; color: black;" name="price" type="text"
+           min="0.01" value='5.0' step='0.01' class="input-group__input">
+        <div class="input-group__btn">
+            <button style=""
+              class="btn " onclick="dmHelper()" id="DonateMateButton">
+
+            <span id="dm_button_text">Add to Cart</span>
+            </button>
+            </div>
+    </div>
+  <div class="product-single__description rte">
+    {{ product.description }}
+        <br>
+    </div>
+    <div>
+
+        <a href="https://www.donatemate.app"><img alt="Powered by DonateMate" src="https://www.donatemate.app/static/img/powered_by.png" style="border-radius: 25px;" width="150"/></a>
+
+  </div>
+
+</div>
+
+<script>
+    function dmHelper()
+    {
+        change_button();
+        let payload = {shop: "{{ shop.permanent_domain }}",
+                     productid: "{{ product.id }}",
+            price: document.getElementById('DonateMateInputField').value
+        };
+
+        fetch("https://www.donatemate.app/api/get_item", {
+            method: 'post',
+            headers: {
+                'Content-Type': 'application/json'},
+            body: JSON.stringify(payload)
+        }).then(
+            response => response.json())
+            .then(json => {if (json.reason === "Success") {
+                    let variant = json.variant;
+                    let items =
+                        {
+                            quantity: 1,
+                            id: variant
+                        };
+                    fetch('/cart/add.js', {
+                        method: 'post',
+                        body: JSON.stringify(items),
+                        headers: {
+                            'Content-Type': 'application/json'},
+                    })
+                        .then(response => response.json())
+                        .then(json => (
+                                myInterval = setInterval(() => {
+                                                         fetch("{{ product.url }}" + ".js", {
+                                        method: 'get'
+                                    }).then(response => response.json())
+                                        .then(json => {
+                                                if (json.variants.find(v => v.id == variant)) {
+                                                    clearInterval(myInterval)
+                                                    window.location.href = '/cart';
+                                                    change_button();
+                                                }
+                                            }
+                                        )
+                                }, 500)
+                            )
+                        )
+                } else {
+                    alert(json.variant)
+                    change_button();
+                }}
+            )
+    }
+
+    function makeValue(val){
+        document.getElementById("DonateMateInputField").value = val;
+        return true;
+    }
+    function change_button() {
+        let loader_child = document.getElementById("loader_child")
+        if (loader_child){
+          document.getElementById("DonateMateButton").disabled = false;
+          document.getElementById('dm_button_text').innerHTML  = "Add To Cart";
+          document.getElementById('dm_button_text').removeChild(loader_child);
+        } else {
+        document.getElementById("DonateMateButton").disabled = true;
+        let loader_child = document.createElement("I")
+        loader_child.id = 'loader_child'
+        loader_child.classList.add("fa", "fa-circle-o-notch", "fa-spin", "fa-lg")
+        document.getElementById('dm_button_text').innerHTML = "";
+        document.getElementById('dm_button_text').appendChild(loader_child);
+        }
+    }
+</script>

@@ -1,0 +1,24 @@
+<div class="partners-banner">
+  <img src="{{ section.settings.banner_img | img_url: 'master' }}" width="auto" height="auto">
+  <div class="page-width">
+    <h1>{{ section.settings.heading }}</h1>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Partner Banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "banner_img",
+        "label": "Banner Image"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "heading",
+        "label": "Heading Text"
+      }
+    ]
+  }
+{% endschema %}

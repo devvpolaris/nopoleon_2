@@ -1,0 +1,287 @@
+<link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css" />
+<link rel="stylesheet"  href="{{ 'section-main-product.css' | asset_url }}"  media="print"  onload="this.media='all'">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+<script src="https://donorbox.org/widget.js" paypalExpress="false"></script>
+
+{%- liquid
+  assign location = product.metafields.custom.location
+  assign city = location | split: '","state":"' | first | split: ':"' | last
+  assign state = location | split: '","state":"' | last | split: '","country":"' | first
+  assign organization_image = product.metafields.custom.organization_image
+-%}
+
+<div class="main-product section-{{ section.id }}-padding">
+  <div class="page-width">
+    <div class="main-product-panel">
+      <div class="product-column-wrapper">
+        <h1>{{ product.metafields.custom.short_description }}</h1>
+        <div class="main-product-image">
+          <div class="product-slider">
+            {% for media in product.media %}
+              <div>
+                {%- case media.media_type -%}
+                {%- when 'image' -%}
+                  <div class="image-card">
+                    <img
+                      class="global-media-settings global-media-settings--no-shadow{% if variant_image %} product__media-item--variant{% endif %}"
+                      srcset="{%- if media.preview_image.width >= 550 -%}{{ media.preview_image | image_url: width: 550 }} 550w,{%- endif -%}
+                              {%- if media.preview_image.width >= 1100 -%}{{ media.preview_image | image_url: width: 1100 }} 1100w,{%- endif -%}
+                              {%- if media.preview_image.width >= 1445 -%}{{ media.preview_image | image_url: width: 1445 }} 1445w,{%- endif -%}
+                              {%- if media.preview_image.width >= 1680 -%}{{ media.preview_image | image_url: width: 1680 }} 1680w,{%- endif -%}
+                              {%- if media.preview_image.width >= 2048 -%}{{ media.preview_image | image_url: width: 2048 }} 2048w,{%- endif -%}
+                              {%- if media.preview_image.width >= 2200 -%}{{ media.preview_image | image_url: width: 2200 }} 2200w,{%- endif -%}
+                              {%- if media.preview_image.width >= 2890 -%}{{ media.preview_image | image_url: width: 2890 }} 2890w,{%- endif -%}
+                              {%- if media.preview_image.width >= 4096 -%}{{ media.preview_image | image_url: width: 4096 }} 4096w,{%- endif -%}
+                              {{ media.preview_image | image_url }} {{ media.preview_image.width }}w"
+                      sizes="(min-width: 750px) calc(100vw - 22rem), 1100px"
+                      src="{{ media.preview_image | image_url: width: 1445 }}"
+                      alt="{{ media.alt | escape }}"
+                      loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
+                      data-media-id="{{ media.id }}"
+                    >
+                  </div>
+                {%- when 'video' -%}
+                  {{ media | media_tag: image_size: "2048x", autoplay: true, loop: loop, controls: true, preload: "none" }}
+                {%- endcase -%}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="product-description">
+          <div class="product-name-description pnd-left">
+            <div class="about-name-description">
+              <h1>Help {{ product.title }}!</h1>
+              <p>{{ product.description }}</p>
+              <div class="product-accordion">
+                <h2>Updates on {{ product.title }}</h2>
+                <div class="accordion-panel">
+                  <button class="accordion"><div class="accordion-image"><img src="//sponsorapet.org/cdn/shop/files/1.png?v=1685982348"></div><div><p class="accordion-title">Update One Title Here</p><p class="accordion-date">MAR 25, 2023</p><div></button>
+                  <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                </div>
+                <div class="accordion-panel">
+                  <button class="accordion"><div class="accordion-image"><img src="//sponsorapet.org/cdn/shop/files/1.png?v=1685982348"></div><div><p class="accordion-title">Update Two Title Here</p><p class="accordion-date">MAR 25, 2023</p><div></button>
+                  <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-name-description pnd-right">
+            {%- if product.metafields.custom.organization != blank -%}
+              <div class="product-right-item product-organization">
+                <div class="account-info">
+                  <div class="account-image"><img src="{{ organization_image | image_url: width: 150 }}" /></div>
+                  <div class="account-name-location">
+                    <p class="pri-title">{{ product.metafields.custom.organization }}</p>
+                    <p>{{ city | capitalize }}, {{ state | capitalize }}</p>
+                  </div>
+                </div>
+                <div class="">
+                  <p>{{ product.metafields.custom.short_description }}</p>
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            {% endif %}
+            <div class="product-right-item recent-donor">
+              <p class="pri-title">Recent Donors</p>
+              <div class="recent-donor-group">
+                <div class="rdg-item">
+                  <p class="rdg-name">Philip N.</p>
+                  <p class="rdg-date">46 minutes ago</p>
+                </div>
+                <div class="rdg-item">
+                  <p class="rdg-name">Anonymous</p>
+                  <p class="rdg-date">2 hours ago</p>
+                </div>
+                <div class="rdg-item">
+                  <p class="rdg-name">Nancy K.</p>
+                  <p class="rdg-date">3 hours ago</p>
+                </div>
+                <div class="rdg-item">
+                  <p class="rdg-name">Bob F.</p>
+                  <p class="rdg-date">3 hours ago</p>
+                </div>
+                <div class="rdg-item">
+                  <p class="rdg-name">Anonymous</p>
+                  <p class="rdg-date">1 day ago</p>
+                </div>
+                <a href="#">View More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="donorbox-panel">
+        <div class="main-product-title">
+          {%- if location -%}
+            <p class="hidden">{{ city }}, {{ state }}</p>
+          {% endif %}
+          {% if product.title %}
+            <h3 style="text-align: center;">Donate via SponsorAPet to help {{ product.title }}</h3>
+          {% endif %}
+        </div>
+        <div class="fundraising-widget">
+          <p style="font-size: 18px; font-weight: 600; text-align: center;"> Raised ${{ product.metafields.custom.donation_amount |  default: 0 }} out of ${{ product.metafields.custom.donation_goal }}</p>
+          <div class="coll-valueline" style="margin-bottom: 20px !important;">
+            <span style="--value:{{ product.metafields.custom.donation_amount | times: 100 | divided_by: product.metafields.custom.donation_goal }}%;"></span>
+          </div>
+          <div class="fundraising-actions">
+            <button class="donate-button">Donate</button>
+            <button class="join-campaign-button">Join Campaign</button>
+          </div>
+        </div>
+        <div class="activity-card">
+          <h2 style="text-align: center;">Activity</h2>
+          <div class="donation">
+              <div class="donation-amount">Miranda Seitz donated $230</div>
+              <div class="donation-message">Miranda thank you for helping Trooper! Trooper says thank you meow-much!</div>
+              <div class="donation-time">1 week ago</div>
+          </div>
+          <div class="donation">
+              <div class="donation-amount">Rose Ballentine donated $25</div>
+              <div class="donation-message">Thank you for helping Trooper get his emergency medical care Rose!</div>
+              <div class="donation-time">1 week ago</div>
+          </div>
+          <div class="donation">
+              <div class="donation-amount">Katherine Ruffner donated $250</div>
+              <div class="donation-message">Katherine thank you for your donation to Trooper's emergency medical fund. Trooper says thank you meowy-much too!</div>
+              <div class="donation-time">1 week ago</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<script defer>
+
+var acc = document.getElementsByClassName('accordion');
+var i;
+
+let server_url = "https://sponsor-pet-app-e9a9109e0444.herokuapp.com/";
+let shopify_collection_id = "{{ product.collections[0].id }}";
+let shopify_product_id = "{{ product.id }}";
+debugger
+let activity_endpoint = server_url + "api/v1/campaigns/reviews?shopify_collection_id=" + shopify_collection_id + "&shopify_product_id=" + shopify_product_id; 
+let donation_endpoint = server_url + "/api/v1/campaigns/summary?shopify_collection_id=" + shopify_collection_id + "&shopify_product_id=" + shopify_product_id;
+
+fetch(activity_endpoint)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    if (data.success) {
+      var activityCard = document.querySelector('.activity-card');
+      activityCard.innerHTML = '<h2 style="text-align: center;">Activity</h2>';
+      data.reviews.forEach(function(review) {
+        if (review.status == "paid") {
+          var donationDiv = document.createElement('div');
+          donationDiv.className = 'donation';
+          donationDiv.innerHTML = '<div class="donation-amount">' + review.donor + ' donated ' + '$' + review.amount + '!</div>' +
+                                  '<div class="donation-message">' + review.comment + '</div>' +
+                                  '<div class="donation-time">' + review.created_at + '</div>';
+          activityCard.appendChild(donationDiv);
+        } else {
+          console.log("Payment not completed yet!");
+        }
+      });
+    } else {
+      console.log('Data not successful', data.message);
+    }
+  })
+  .catch(function(error) {
+    console.log('Error fetching data:', error);
+  });
+
+fetch(donation_endpoint)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    if (data && data.success) {
+      var fundraisingInfo = document.querySelector('.fundraising-widget p');
+      fundraisingInfo.textContent = 'Raised $' + data.raised_amount + ' out of $' + data.goal_amount;
+
+      // Calculate the percentage raised for the value line
+      var percentageRaised = (data.raised_amount / data.goal_amount) * 100;
+      var collValueline = document.querySelector('.coll-valueline span');
+      collValueline.style.setProperty('--value', percentageRaised + '%');
+    }
+  })
+  .catch(function(error) {
+    console.error('Error fetching donation data:', error);
+  });
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+$('.product-slider').slick({
+  dots: true,
+  adaptiveHeight: true,
+  arrows: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear',
+  prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa-solid fa-circle-arrow-left fa-2xs' style='color: #ff5c18;'></i></button>",
+  nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa-solid fa-circle-arrow-right fa-2xs' style='color: #ff5c18;'></i></button>"
+});
+</script>
+
+{% schema %}
+{
+  "name": "Main Product",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": []
+}
+{% endschema %}

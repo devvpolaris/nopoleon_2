@@ -1,0 +1,381 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "5a6fe7c5-4c28-486c-ace5-2a5f9a874c98": {
+      "type": "slideshow",
+      "blocks": {
+        "template--20045668057389__5a6fe7c5-4c28-486c-ace5-2a5f9a874c98-16897000350787fd84-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vector_1_1_43476cee-8456-437a-b607-1fb680359eac.png",
+            "image_mobile": "shopify:\/\/shop_images\/Rectangle_67_ccc22d86-622f-4c21-81f8-bd074cae8d2d.png",
+            "heading": "Join The Petstar Club And Help Pet in Need!",
+            "heading_size": "h0",
+            "disable_icon_btn1": false,
+            "button_label_1": "10",
+            "link_1": "https:\/\/donorbox.org\/pet-star",
+            "button_style_1": "secondary",
+            "disable_icon_btn2": true,
+            "button_label_2": "$25",
+            "link_2": "https:\/\/donorbox.org\/pet-star",
+            "button_style_2": "secondary",
+            "disable_icon_btn3": true,
+            "button_label_3": "$50",
+            "link_3": "https:\/\/donorbox.org\/pet-star",
+            "button_style_3": "secondary",
+            "disable_icon_btn4": true,
+            "button_label_4": "$100",
+            "link_4": "https:\/\/donorbox.org\/pet-star",
+            "button_style_4": "secondary",
+            "disable_icon_btn5": true,
+            "button_label_5": "Other",
+            "link_5": "https:\/\/donorbox.org\/pet-star",
+            "button_style_5": "secondary",
+            "subheading": "",
+            "box_align": "middle-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--20045668057389__5a6fe7c5-4c28-486c-ace5-2a5f9a874c98-16897000350787fd84-0"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "e1a3d6d9-b0ef-4053-a7e8-0694d1540b34": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17005643989293__e1a3d6d9-b0ef-4053-a7e8-0694d1540b34-166913981295e884f0-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/All_Hands_in_Heart_Orange.png",
+            "title": "Donate Through Sponsor a Pet",
+            "text": "<p>Choose the amount right for you and help animals and the non-profits caring for them.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17005643989293__e1a3d6d9-b0ef-4053-a7e8-0694d1540b34-166913981295e884f0-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hand_and_heart_Orange_Again.png",
+            "title": "Your Donation Is Recieved",
+            "text": "<p>All donations are sent directly to the organization you're supporting.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17005643989293__e1a3d6d9-b0ef-4053-a7e8-0694d1540b34-166913981295e884f0-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Picture-2.png",
+            "title": "Monthly Email Updates",
+            "text": "<p>Receive updates from the animals you've sponsored and hear more from amazing rescuers!<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17005643989293__e1a3d6d9-b0ef-4053-a7e8-0694d1540b34-166913981295e884f0-0",
+        "template--17005643989293__e1a3d6d9-b0ef-4053-a7e8-0694d1540b34-166913981295e884f0-1",
+        "template--17005643989293__e1a3d6d9-b0ef-4053-a7e8-0694d1540b34-166913981295e884f0-2"
+      ],
+      "settings": {
+        "title": "How Sponsor a Pet Works",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "show_title_border": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "4caa677b-21fc-4650-a559-16999c637949": {
+      "type": "rich-text",
+      "blocks": {
+        "template--20045668057389__4caa677b-21fc-4650-a559-16999c637949-16896730968ecd197b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>What you can expect from your donation<\/p>",
+            "heading_size": "h1",
+            "color": "#004c98"
+          }
+        }
+      },
+      "block_order": [
+        "template--20045668057389__4caa677b-21fc-4650-a559-16999c637949-16896730968ecd197b-0"
+      ],
+      "settings": {
+        "is_top_wave": false,
+        "is_bottom_wave": false,
+        "section_style": "normal",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 8,
+        "padding_bottom": 32
+      }
+    },
+    "b7c04b28-85a7-4b65-b664-4e02795795cb": {
+      "type": "image-with-text",
+      "blocks": {
+        "b48a889e-5555-4968-a1ea-310d965061e1": {
+          "type": "caption",
+          "settings": {
+            "caption": "MONTHLY EMAIL UPDATES",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium",
+            "color": "#003366"
+          }
+        },
+        "template--17005643989293__b7c04b28-85a7-4b65-b664-4e02795795cb-166913981240998fac-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Every Donation Receives Monthly Updates",
+            "heading_size": "h1",
+            "color": "#ff5c18"
+          }
+        },
+        "template--17005643989293__b7c04b28-85a7-4b65-b664-4e02795795cb-166913981240998fac-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>• Statistics of how many animals \/ shelters you've impacted<\/p><p>• Monthly Email updates collectively of Sponsor a Pet's impact<\/p><p>• Notification of your animal's birthday<\/p><p>• Recognition of outstanding Donors<\/p><p>• Volunteer Spotlight - Learn how others are making an impact in their community<\/p>",
+            "text_style": "body",
+            "color": "#222222"
+          }
+        }
+      },
+      "block_order": [
+        "b48a889e-5555-4968-a1ea-310d965061e1",
+        "template--17005643989293__b7c04b28-85a7-4b65-b664-4e02795795cb-166913981240998fac-0",
+        "template--17005643989293__b7c04b28-85a7-4b65-b664-4e02795795cb-166913981240998fac-1"
+      ],
+      "custom_css": [
+        ".image-with-text__grid--reverse .image-with-text__media-item {padding-right: 0.5rem; padding-top: 0.5rem; padding-bottom: 0.5rem;}"
+      ],
+      "settings": {
+        "title": "",
+        "image": "shopify:\/\/shop_images\/Ellipse_14.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "box_border": true,
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "mobile_content_alignment": "center",
+        "mobile_content_position": "mixed",
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "wave_bg": false,
+        "color_background": "#ffffff",
+        "image_border_radius": 16
+      }
+    },
+    "9977b458-7ff9-432e-a429-097f129a7764": {
+      "type": "image-with-text",
+      "blocks": {
+        "432b878f-f0cc-4468-980a-2ee2741327f6": {
+          "type": "caption",
+          "settings": {
+            "caption": "REWARDS",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large",
+            "color": "#003366"
+          }
+        },
+        "template--17005643989293__9977b458-7ff9-432e-a429-097f129a7764-166913981240998fac-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Rewards",
+            "heading_size": "h1",
+            "color": "#ff5c18"
+          }
+        },
+        "template--17005643989293__9977b458-7ff9-432e-a429-097f129a7764-166913981240998fac-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>• Free Merchandise (based on giving level)<\/p><p>• Discounts from our Corporate Sponsorships<\/p><p>• Contests for whoever refers the most amount of new PetStar members\t\t\t\t<\/p>",
+            "text_style": "body",
+            "color": "#222222"
+          }
+        }
+      },
+      "block_order": [
+        "432b878f-f0cc-4468-980a-2ee2741327f6",
+        "template--17005643989293__9977b458-7ff9-432e-a429-097f129a7764-166913981240998fac-0",
+        "template--17005643989293__9977b458-7ff9-432e-a429-097f129a7764-166913981240998fac-1"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "title": "",
+        "image": "shopify:\/\/shop_images\/Ellipse_15.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "box_border": true,
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "mobile_content_alignment": "center",
+        "mobile_content_position": "mixed",
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "wave_bg": false,
+        "color_background": "#ffffff",
+        "image_border_radius": 16
+      }
+    },
+    "0fdb9146-9bd3-43ac-af21-9a07ccfe2666": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17005643989293__0fdb9146-9bd3-43ac-af21-9a07ccfe2666-166913981298cd6028-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Join Sponsor a Pet<\/p>",
+            "heading_size": "h1",
+            "color": "#ffffff"
+          }
+        },
+        "template--17005643989293__0fdb9146-9bd3-43ac-af21-9a07ccfe2666-166913981298cd6028-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Choose Your Monthly Donation Amount\t\t<\/p>",
+            "color": "#222222"
+          }
+        },
+        "template--17005643989293__0fdb9146-9bd3-43ac-af21-9a07ccfe2666-166913981298cd6028-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "$10",
+            "button_link": "https:\/\/donorbox.org\/pet-star",
+            "button_style_secondary": true,
+            "button_label_2": "$25",
+            "button_link_2": "https:\/\/donorbox.org\/pet-star",
+            "button_style_secondary_2": false,
+            "button_label_3": "$50",
+            "button_link_3": "https:\/\/donorbox.org\/pet-star",
+            "button_style_secondary_3": false,
+            "button_label_4": "$100",
+            "button_link_4": "https:\/\/donorbox.org\/pet-star",
+            "button_style_secondary_4": false,
+            "button_label_5": "Other",
+            "button_link_5": "https:\/\/donorbox.org\/pet-star",
+            "button_style_secondary_5": false
+          }
+        }
+      },
+      "block_order": [
+        "template--17005643989293__0fdb9146-9bd3-43ac-af21-9a07ccfe2666-166913981298cd6028-0",
+        "template--17005643989293__0fdb9146-9bd3-43ac-af21-9a07ccfe2666-166913981298cd6028-1",
+        "template--17005643989293__0fdb9146-9bd3-43ac-af21-9a07ccfe2666-166913981298cd6028-2"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "is_top_wave": true,
+        "is_bottom_wave": true,
+        "section_style": "wave",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 4
+      }
+    },
+    "a7c4c79e-915e-4557-a21f-caa262f82558": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--17005643989293__a7c4c79e-915e-4557-a21f-caa262f82558-16691398066c5ac379-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How can I be sure that my donation is helping the pet I donated to?",
+            "icon": "none",
+            "row_content": "<p>All the organizations featured on Sponsor a Pet are certified 501(c)3 <br\/>non-profits that have been vetted by us.  After your donation, you will receive monthly updates regarding the non-profit or the animal that you’re sponsoring.<\/p>",
+            "page": ""
+          }
+        },
+        "template--17005643989293__a7c4c79e-915e-4557-a21f-caa262f82558-16691398066c5ac379-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I obtain my donation receipt?",
+            "icon": "none",
+            "row_content": "<p>After each donation, a receipt is emailed to you.  You can review all your donations in your user profile dashboard.<\/p>",
+            "page": ""
+          }
+        },
+        "template--17005643989293__a7c4c79e-915e-4557-a21f-caa262f82558-16691398066c5ac379-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can my donation be refunded?",
+            "icon": "none",
+            "row_content": "<p>In order to support the urgent needs of our non-profit partners, we process the donations as quickly as possible to get them in the hands of animals in need.  Because of this, refunds are not possible.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17005643989293__a7c4c79e-915e-4557-a21f-caa262f82558-16691398066c5ac379-0",
+        "template--17005643989293__a7c4c79e-915e-4557-a21f-caa262f82558-16691398066c5ac379-1",
+        "template--17005643989293__a7c4c79e-915e-4557-a21f-caa262f82558-16691398066c5ac379-2"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FAQS",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "color_heading": "#004C98",
+        "color_text": "#222222",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "5a6fe7c5-4c28-486c-ace5-2a5f9a874c98",
+    "e1a3d6d9-b0ef-4053-a7e8-0694d1540b34",
+    "4caa677b-21fc-4650-a559-16999c637949",
+    "b7c04b28-85a7-4b65-b664-4e02795795cb",
+    "9977b458-7ff9-432e-a429-097f129a7764",
+    "0fdb9146-9bd3-43ac-af21-9a07ccfe2666",
+    "a7c4c79e-915e-4557-a21f-caa262f82558"
+  ]
+}

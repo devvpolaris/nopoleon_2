@@ -1,0 +1,51 @@
+{{ 'section-community-numbers.css' | asset_url | stylesheet_tag }}
+
+<div class="community-numbers" data-aos="fade-in">
+  <div class="community-numbers__wrapper">
+    {%- for block in section.blocks -%}
+      <div class="community-numbers__item" data-aos="fade-in">
+        <h2 class="community-numbers__content fw-bold" data-aos="fade-down">{{ block.settings.number }}</h2>
+        <p class="community-numbers__heading" data-aos="fade-up">{{ block.settings.heading_text }}</p>
+        {%- unless forloop.last -%}
+          <span class="community-numbers__divider"></span>
+        {%- endunless -%}
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Community Numbers",
+  "tag": "section",
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "community",
+      "name": "Community",
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Number",
+          "default": "1K+"
+        },
+        {
+          "type": "text",
+          "id": "heading_text",
+          "label": "Heading Text",
+          "default": "Lorem"
+        }
+      ]
+    }
+  ],
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Community Numbers"
+    }
+  ]
+}
+{% endschema %}

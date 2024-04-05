@@ -1,0 +1,117 @@
+.rich-text {
+  z-index: 1;
+}
+
+.rich-text__wrapper {
+  display: flex;
+  justify-content: center;
+  width: calc(100% - 4rem / var(--font-body-scale));
+}
+
+.rich-text:not(.rich-text--full-width) .rich-text__wrapper {
+  margin: auto;
+  width: calc(100% - 8rem / var(--font-body-scale));
+}
+
+.rich-text__blocks {
+  width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .rich-text__wrapper {
+    width: 100%;
+  }
+
+  .rich-text__wrapper--left {
+    justify-content: flex-start;
+  }
+
+  .rich-text__wrapper--right {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .template--page-about-us h2.rich-text__heading {
+    max-width: 1116px;
+    margin: 0 auto;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .template--page-about-us .rich-text__blocks p {
+    max-width: 688px;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}
+
+.rich-text__blocks * {
+  overflow-wrap: break-word;
+}
+
+.rich-text__blocks>* {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.rich-text__blocks>*+* {
+  margin-top: 2rem;
+}
+
+.rich-text__blocks>*+a {
+  margin-top: 3rem;
+}
+
+.rich-text__buttons {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  max-width: 60rem;
+  word-break: break-word;
+}
+
+.rich-text__buttons--multiple>* {
+  flex-grow: 1;
+  min-width: 11rem;
+}
+
+.rich-text__buttons+.rich-text__buttons {
+  margin-top: 1rem;
+}
+
+.rich-text__blocks.left .rich-text__buttons {
+  justify-content: flex-start;
+}
+
+.rich-text__blocks.right .rich-text__buttons {
+  justify-content: flex-end;
+}
+
+.icon-footer-bottom-bg svg {
+  transform: rotate(-180deg) translateY(1px);
+}
+
+.rich-text__buttons a.button {
+  border: 1px solid #FFF;
+  color: #FFF;
+  background: #004C98;
+}
+
+.rich-text__buttons a.button.button--secondary {
+  background: #FFF;
+  color: #004C98;
+}
+
+.icon-footer-bottom-bg .footer__top-bg {
+  margin: 0;
+}

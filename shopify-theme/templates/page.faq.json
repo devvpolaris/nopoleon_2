@@ -1,0 +1,167 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "1670513841a9dcff31": {
+      "type": "apps",
+      "disabled": true,
+      "blocks": {
+        "7d727783-c49b-4457-9051-ae5b936a5509": {
+          "type": "shopify:\/\/apps\/powerful-contact-form-builder\/blocks\/app-block\/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+          "settings": {
+            "shortcode": "<div class=\"globo-formbuilder\" data-id=\"OTk4MzY=\"><\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "7d727783-c49b-4457-9051-ae5b936a5509"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "4f035289-5137-4d9a-8da2-4edac11f531c": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--17198822129965__4f035289-5137-4d9a-8da2-4edac11f531c-167083885560e26efb-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How can I help rescue animals on Sponsor a Pet?",
+            "icon": "check_mark",
+            "row_content": "<p>There are 3 ways on how you can help rescue animals on SPONSOR A PET:<\/p><p>1) Join the PetStar Club by donating monthly.<\/p><p><a href=\"http:\/\/www.SponsoraPet.com\/donate\"><span style=\"text-decoration:underline\">www.SponsoraPet.com\/donate<\/span><\/a><\/p><p>Joining the PetStar Club affords you the opportunity to continually make an impact across multiple communities . Most people give between $25-100 a month.  Choose the amount that you’re most comfortable giving. <\/p><p>2) Support an individual nonprofit \/ animal in need<\/p><p><a href=\"https:\/\/www.SponsoraPet.com\/donate\" title=\"https:\/\/www.SponsoraPet.com\/donate\"><span style=\"text-decoration:underline\">www.SponsoraPet.com\/donate<\/span><\/a><\/p><p>You can support a nonprofit or animal with a one time donation. Funds are sent directly to the nonprofit that cares for the animal.<\/p><p>3) PURCHASE OUR MERCHANDISE<\/p><p><a href=\"https:\/\/sponsor-a-pet.myshopify.com\/collections\/all\" title=\"https:\/\/sponsor-a-pet.myshopify.com\/collections\/all\">www.sponsorapet.com\/shop <\/a><\/p><p>Every purchase made, a portion of the proceeds goes to one of our Non-profit partners.<\/p>",
+            "page": ""
+          }
+        },
+        "template--17198822129965__4f035289-5137-4d9a-8da2-4edac11f531c-167083885560e26efb-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How can I be sure my donation is helping the pet I donate to?",
+            "icon": "check_mark",
+            "row_content": "<p>All the organizations featured on Sponsor a Pet are certified 501(c) non-profits that have been vetted by us.  After your donation, you will receive monthly updates regarding the nonprofit or the animal that you’re sponsoring.<\/p><p><\/p><p>On an individual basis we will work with international non-profits.  However these donations are not tax deductible.  We will make sure to highlight this.  Only one time donations will be used to support international non-profits.<\/p>",
+            "page": ""
+          }
+        },
+        "template--17198822129965__4f035289-5137-4d9a-8da2-4edac11f531c-167083885560e26efb-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does Sponsor a Pet work with International Non-profits?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes, Sponsor a Pet works with international non-profits as animals that are in need and need or support does not stop at the boarders of the US.  However, since they are international, these are not tax deductible donations.  The PetStar club will only donate to certified 501(c)3 non-profits. International Non-profits will be on an individual basis.<\/p>",
+            "page": ""
+          }
+        },
+        "template--17198822129965__4f035289-5137-4d9a-8da2-4edac11f531c-167083885560e26efb-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I obtain my donation receipt?",
+            "icon": "check_mark",
+            "row_content": "<p>After each donation, a receipt is emailed to you.  You can review all your donations in your user profile dashboard.<\/p>",
+            "page": ""
+          }
+        },
+        "bb0d8e73-61ff-4434-98f8-356f5454d86b": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can my donation be refunded?",
+            "icon": "check_mark",
+            "row_content": "<p>In order to support the urgent needs of our non-profit partners, we process the donations as quickly as possible to get them in the hands of animals in need.  Because of this, refunds are not possible.<strong> <\/strong><\/p>",
+            "page": ""
+          }
+        },
+        "303d4280-3ae9-4ef6-a0ac-48a47b82c8d6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How can I Become more involved in the community?",
+            "icon": "check_mark",
+            "row_content": "<p>We wholeheartedly believe that it takes the community to help bring change.  Whether its online or working with your local nonprofit organization.  Please feel free to reach out to us via the contact us page <a href=\"http:\/\/www.sponsorapet.com\/contact\"><span style=\"text-decoration:underline\">www.sponsorapet.com\/contact<\/span><\/a> to tell us how you would like to get involved. We’re always looking for volunteers to help save all the animals. <\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17198822129965__4f035289-5137-4d9a-8da2-4edac11f531c-167083885560e26efb-0",
+        "template--17198822129965__4f035289-5137-4d9a-8da2-4edac11f531c-167083885560e26efb-1",
+        "template--17198822129965__4f035289-5137-4d9a-8da2-4edac11f531c-167083885560e26efb-2",
+        "template--17198822129965__4f035289-5137-4d9a-8da2-4edac11f531c-167083885560e26efb-3",
+        "bb0d8e73-61ff-4434-98f8-356f5454d86b",
+        "303d4280-3ae9-4ef6-a0ac-48a47b82c8d6"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "For Donors",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "d825084d-c642-4ae7-b2b5-2d3b75bfc414": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--17198822129965__d825084d-c642-4ae7-b2b5-2d3b75bfc414-167083885560e26efb-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How is SPONSOR A PET different from other fundraising websites?",
+            "icon": "check_mark",
+            "row_content": "<p>Sponsor a Pet fosters an environment of community online and an in person.  We work closely with our non-profit partners and the individual members who are passionate about the wellbeing of all animals.  Each non-profit works one on one with a dedicated fundraising consultant to discuss their goals and needs. Our automated tools function as the marketing arm of your organization while being able to reach Hundred of Thousands outside of your constituents.<\/p><p>If you would like to discuss additional services to outsource we would be happy to discuss.  In addition to our automation, we can help ensure your organization runs smoothly from an operations standpoint. Sponsor a Pet has a tremendous amount of first hand experience of managing the books, donor relationships, managing costs and making your organization more agile.<\/p>",
+            "page": ""
+          }
+        },
+        "template--17198822129965__d825084d-c642-4ae7-b2b5-2d3b75bfc414-167083885560e26efb-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How quickly will I receive my funds?",
+            "icon": "check_mark",
+            "row_content": "<p>PayPal donation can be distributed on a weekly basis.  Other donations are paid out on a bi-weekly basis.  It is our top priority to get your funds in your possession as quickly as possible.<\/p>",
+            "page": ""
+          }
+        },
+        "template--17198822129965__d825084d-c642-4ae7-b2b5-2d3b75bfc414-167083885560e26efb-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does it cost anything to use Sponsor a Pet?",
+            "icon": "check_mark",
+            "row_content": "<p>Sponsor a Pet is a completely free platform. We will feature your organization, animals in need, your stories for free across all of our platforms. <\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17198822129965__d825084d-c642-4ae7-b2b5-2d3b75bfc414-167083885560e26efb-0",
+        "template--17198822129965__d825084d-c642-4ae7-b2b5-2d3b75bfc414-167083885560e26efb-1",
+        "template--17198822129965__d825084d-c642-4ae7-b2b5-2d3b75bfc414-167083885560e26efb-2"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FOR NON PROFIT ORGANIZATIONS",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1670513841a9dcff31",
+    "4f035289-5137-4d9a-8da2-4edac11f531c",
+    "d825084d-c642-4ae7-b2b5-2d3b75bfc414"
+  ]
+}

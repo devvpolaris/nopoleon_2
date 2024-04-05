@@ -1,0 +1,653 @@
+<link rel="stylesheet" href="{{ 'section-non-profit-dashboard.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'selectivity-jquery.css' | asset_url }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.0/dist/trix.css">
+
+<script type="text/javascript" src="https://unpkg.com/trix@2.0.0/dist/trix.umd.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{{ 'selectivity-jquery.js' | asset_url }}"></script>
+
+<style media="screen">
+  trix-editor {
+    height: 45%;
+    overflow: scroll;
+  }
+</style>
+
+<section class="non-profit-dashboard section-{{ section.id }}-padding">
+    {% assign collection_id = customer.metafields.donation.shopify_collection_id | times: 1 %}
+    {% for collection in collections %}
+        {% if collection.id == collection_id %}
+            {% assign selected = collection %}
+        {% endif %}
+    {% endfor %}
+    <div class="page-width">
+        <div class="nonprofit-content-group" id="panel-content">
+            <div class="sign-out-panel">
+                <a href="/account/logout/" class="button button--primary btn-signout">Sign Out</a>
+            </div>
+            <div class="ncg-item dashboard-content">
+                <div class="ncg-welcome-panel ncg-panel">
+                    <div class="user-image">
+                      {% comment %}<img src="//sponsorapet.org/cdn/shop/files/1_176295d8-ff5c-4e28-baa6-6ecfaf386abf.png?v=1685983090">{% endcomment %}
+                    </div>
+                    <h1>Welcome back, {{ customer.first_name }} {{ customer.last_name }}!</h1>
+                    <div class="ncg-user-info">
+                        <a href="#" class="user-phone">{% render 'icon-phone' %}{{ customer.phone }}</a>
+                        <a href="#" class="user-email">{% render 'icon-email' %}{{ customer.email }}</a>
+                        <a href="#" class="user-location">{% render 'icon-location1' %}{{ customer.default_address.city }}, {{ customer.default_address.province_code }}, {{ customer.default_address.country }}</a>
+                    </div>
+                    {% comment %}<div class="create-champaign"><a href="#" class="btn-primary">+ Create Champaign</a></div>{% endcomment %}
+                </div>
+                <div class="ncg-donations-panel ncg-panel">
+                    <h2>Donations</h2>
+                    <div class="ncg-donations-price dcd-panel">
+                        <div class="price-count">
+                            <p>Weekly Donations</p>
+                            <h2 id="weekly-donation"></h2>
+                        </div>
+                        <div class="price-count">
+                            <p>Monthly Donations</p>
+                            <h2 id="monthly-donation"></h2>
+                        </div>
+                        <div class="price-count">
+                            <p>Total Donations</p>
+                            <h2 id="total-donation"></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="status-number-count">
+                    <div class="campaigns-count-panel ncg-panel">
+                        <h2>Campaigns</h2>
+                        <div class="dcd-panel">
+                            <div class="price-count active-count">
+                                <p>Active</p>
+                                <h2>5</h2>
+                            </div>
+                            <div class="price-count">
+                                <p>Inactive</p>
+                                <h2>0</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="donors-count-panel ncg-panel">
+                        <h2>Donors</h2>
+                        <div class="dcd-panel">
+                            <div class="price-count donors-count">
+                                <p>Sponsor a Pet Donors</p>
+                                <h2>0</h2>
+                            </div>
+                            <div class="price-count">
+                                <p>Email List</p>
+                                <h2>0</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="account-nonprofitlist">
+                    <button class="button button--secondary btn__campaign__create">Create Campaign</button>
+                </div>
+                <div class="champaigns-panel ncg-panel">
+                    <div class="active-status">
+                        <a href="#" class="ncg-active item-active">Active</a>
+                        <a href="#" class="ncg-inactive">Inactive</a>
+                        <a href="#" class="ncg-drafts">Drafts</a>
+                    </div>
+                    <div class="champaigns-collection" id="champaigns-collection">
+                        {% for product in selected.products %}
+                        <div class="collection-col">
+                            <a href="{{ product.url }}" class="collection-col-champaign">
+                                <div class="col-champaign-img">
+                                    <img src="{{ product.images.first | img_url }}">
+                                    <h3>{{ product.title }}</h3>
+                                    <p>Shelter Name Here</p>
+                                    <p>{{ product.created_at }}</p>
+                                </div>
+                                <div class="coll-main">
+                                    <div class="coll-valueline">
+                                        <span style="--value:60%;"></span>
+                                    </div>
+                                    <p class="coll-value-persent">Raised $200 of $1,000</p>
+                                </div>
+                            </a>
+                            <div class="coll-link">
+                                <div class="coll-link-item email-item" data-id="{{ product.id }}" data-title="{{ product.title }}" data-collection="{{ selected.featured_image | image_url }}" data-product="{{ product.images.first | img_url }}"><a style="cursor: pointer;">{% render 'icon-email' %}Send Email</a></div>
+                                <!-- <div class="coll-link-item"><a href="#">{% render 'icon-pencil' %}Edit</a></div> -->
+                                <div class="coll-link-item card--update" data-id="{{ product.id }}"><a href="#">{% render 'icon-clock' %}Updates</a></div>
+                                <div class="coll-link-item card--share" data-url="{{ product.url }}"><a href="">{% render 'icon-share1' %}Share</a></div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="ncg-item nonprofit-report nonprofit--donations">
+                <h2>Nonprofit Report</h2>
+                <div class="ncg-panel">
+                    <table id="customers">
+                        <thead>
+                            <tr>
+                              <th>Donor</th>
+                              <th>Donation Date</th>
+                              <th>Donation Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="ncg-item nonprofit-donor-list nonprofit--donors">
+                <h2>Nonprofit Donor List</h2>
+                <div class="account-nonprofitlist">
+                    <button id="uploadButton" class="button button--secondary">Upload Nonprofit Donor List</button>
+                    <a class="btn--download" href="https://cdn.shopify.com/s/files/1/0668/2669/9053/files/donor_list.csv?v=1699308245">Download CSV Template</a>
+                    <div id="uploadModal" class="modal">
+                      <form id="non-profit-upload-form" class="modal-content" multipart="true">
+                        <span class="close" id="closeModal">{%- render 'icon-close' -%}</span>
+                        <h2>Select CSV File to Upload</h2>
+                        <label for="csvFileInput" class="account--csvFileInput">
+                          <img id="previewImage" alt="Preview" width="auto" height="auto" src="https://cdn.shopify.com/s/files/1/0668/2669/9053/files/upload.gif?v=1697611253" loading="lazy">
+                          <span class="drag--heading" id="filename">Drag files here to upload</span>
+                          <input type="file" id="csvFileInput" name="file">
+                        </label>
+                        <button id="uploadCSV" class="button button--primary" type="button">Upload</button>
+                      </form>
+                    </div>
+                    <div id="successMessage" class="hide">
+                      <p>CSV file uploaded successfully!</p>
+                    </div>
+                </div>
+
+                <div class="ncg-panel">
+                    <table id="customers">
+                        <thead>
+                            <tr>
+                              <th>First Name</th>
+                              <th>Last Name</th>
+                              <th>Email</th>
+                              <th>Phone</th>
+                              <th>City</th>
+                              <th>State</th>
+                              <th>Created</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+        </div>
+        <div class="content">
+            <div id="address-selector"></div>
+            <div>
+              <input type="checkbox" id="select__all_donors" class="select--all-donors" name="select__all_donors">
+              <label for="select__all_donors">Send All Donors</label>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Templates</button>
+              <div class="dropdown-content" id="template-dropdown">
+              </div>
+            </div>
+            <div class="subject">
+              <input class="subject--input" type="text" name="" value="Welcome to Sponsor a Pet!">
+            </div>
+            <input id="email__content" type="hidden" name="content">
+            <trix-editor input="email__content"></trix-editor>
+        </div>
+        <div class="modal-footer">
+            <button class="send-button">Send</button>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="modal--wrapper">
+      <div id="updates__modal" class="modal modal--updates">
+        <form id="non-profit-upload-form" class="modal-content" multipart="true">
+          <span class="close close--modal" data-id="updates__modal">{%- render 'icon-close' -%}</span>
+          <h2>What updates do you want?</h2>
+          <label for="csvFileInput" class="account--csvFileInput">
+            <img id="previewImage" alt="Preview" width="auto" height="auto" src="https://cdn.shopify.com/s/files/1/0668/2669/9053/files/upload.gif?v=1697611253" loading="lazy">
+            <span class="drag--heading" id="filename">Drag files here to upload</span>
+            <input type="file" id="csvFileInput" name="files[]" multiple>
+          </label>
+          <input id="id" type="hidden" name="id" value="">
+          <textarea name="description" rows="8" cols="80"></textarea>
+          <button class="button button--primary button--submit" type="button">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal--wrapper">
+      <div id="campaign__modal" class="modal modal--campaign">
+        <form id="non-profit-upload-form" class="modal-content" multipart="true">
+          <span class="close close--modal" data-id="campaign__modal">{%- render 'icon-close' -%}</span>
+          <h2>Please provide campaign details</h2>
+          
+          <div class="form--input">
+            <label for="">Title</label>
+            <input type="text" name="title" value="">
+          </div>
+          <div class="form--input">
+            <label for="">Description</label>
+            <textarea name="description" rows="8" cols="80"></textarea>
+          </div>
+          <label for="csvFileInput" class="account--csvFileInput">
+            <img id="previewImage" alt="Preview" width="auto" height="auto" src="https://cdn.shopify.com/s/files/1/0668/2669/9053/files/upload.gif?v=1697611253" loading="lazy">
+            <span class="drag--heading" id="filename">Drag assets here to upload</span>
+            <input type="file" id="csvFileInput" name="files[]" multiple>
+          </label>
+          <button class="button button--primary button--submit" type="button">Send</button>
+        </form>
+      </div>
+    </div>
+</section>
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}
+      px;
+      padding-bottom: {{ section.settings.padding_bottom }}
+      px;
+    }
+  }
+  .non-profit-dashboard {
+    padding-top: 40px;
+  }
+{%- endstyle -%}
+
+<script>
+    let filteredDonors;
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function(e) {
+            if(e.target.result){
+                $('.selected-image img').css("display", "block");
+                $('.selected-image svg').css("display", "none");
+                $('.selected-image img').attr('src', e.target.result);
+            }
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $("#profile-img").change(function() {
+        readURL(this);
+    });
+
+    let server_url = "https://sponsor-pet-app-e9a9109e0444.herokuapp.com/";
+    let shopify_collection_id = "{{ customer.metafields.donation.shopify_collection_id }}";
+    let sender = "{{ customer.email }}";
+    let summary_api_url = server_url + 'api/v1/orgs/summary?shopify_collection_id=' + shopify_collection_id;
+
+    fetch(summary_api_url)
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+        if (data.success) {
+            let modal = document.getElementById("myModal");
+            let span = document.getElementsByClassName("close")[0];
+            let emailButtons = document.querySelectorAll(".email-item");
+
+            emailButtons.forEach(item => {
+                item.addEventListener("click", e => {
+                    modal.querySelector('.send-button').dataset.productId = e.currentTarget.dataset.id
+                    modal.querySelector('.send-button').dataset.productTitle = e.currentTarget.dataset.title
+                    modal.querySelector('.send-button').dataset.productImage = "https:"+ e.currentTarget.dataset.product
+                    modal.querySelector('.send-button').dataset.collectionImage = "https:" + e.currentTarget.dataset.collection
+                    modal.style.display = "block";
+                })
+            });
+
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            const emailTemplatesDropdown = document.getElementById("template-dropdown")
+            data.email_templates.forEach(template => {
+                const newElement = document.createElement("a");
+                newElement.innerHTML = template.title;
+                newElement.classList.add('template--option')
+                emailTemplatesDropdown.appendChild(newElement)
+            })
+            document.addEventListener('click', e => {
+              if (e.target.classList.value == 'template--option') {
+                const matchingTemplate = data.email_templates.find((element) => element.title == e.target.innerHTML)
+                let element = document.querySelector("trix-editor")
+                element.editor.setSelectedRange([0, 4000000])
+                element.editor.deleteInDirection("forward")
+                element.editor.insertHTML(matchingTemplate.content)
+                document.querySelector('.subject--input').value = e.target.innerHTML
+              }
+              if (e.target.classList.value == 'send-button') {
+                const selectedIds = document.querySelectorAll(".selectivity-multiple-selected-item");
+                let donorIds = [];
+                if (selectedIds.length > 0){
+                    selectedIds.forEach(item => {
+                        donorIds.push(item.getAttribute("data-item-id"));
+                    })
+                }
+                const isAllDonors = document.querySelector('.select--all-donors').checked;
+                if (isAllDonors) {
+                  donorIds = [];
+                  filteredDonors.forEach(donor => {
+                    donorIds.push(donor.id);
+                  })
+                }
+                const content = document.getElementById(`email__content`).value;
+                const productId = e.target.dataset.productId;
+                const productTitle = e.target.dataset.productTitle;
+                const productImage = e.target.dataset.productImage;
+                const collectionImage = e.target.dataset.collectionImage;
+                const subject = document.querySelector('.subject--input').value;
+                let email_api_url = server_url + `api/v1/orgs/send_email?shopify_collection_id=${shopify_collection_id}`;
+                var formData = new FormData();
+                formData.append("donor_ids", donorIds);
+                formData.append("subject", subject);
+                formData.append("content", content);
+                formData.append("sender", sender);
+                formData.append("product_id", productId);
+                formData.append("product_title", productTitle);
+                formData.append("product_image", productImage);
+                formData.append("collection_image", collectionImage);
+                  $.ajax({
+                    url: email_api_url,
+                    type: 'POST',
+                    data: formData,
+                    success: function (data) {
+                      if(data.success){
+                        modal.style.display = "none";
+                      }
+                    },
+                    cache: false,
+                    contentType: false,
+                    processData: false
+                });
+              }
+            })
+
+            document.querySelectorAll('.card--share').forEach(btn => {
+              btn.addEventListener('click', async (e) => {
+                e.preventDefault();
+                var path = e.currentTarget.dataset.url;
+                var completeUrl = `https://sponsorapet.org${path}`;
+                await navigator.clipboard.writeText(completeUrl);
+                alert(`Sharing url has been copied to the clipboard!`);
+              })
+            })
+
+            document.querySelector('.btn__campaign__create').addEventListener('click', () => {
+              const campaignModal = document.getElementById('campaign__modal')
+              campaignModal.style.display = 'block'
+              campaignModal.querySelector('.close--modal').addEventListener('click', e => {
+                const modalId = e.currentTarget.dataset.id
+                document.getElementById(modalId).style.display = 'none'
+              })
+              campaignModal.querySelector('button').addEventListener('click', () => {
+                const form = campaignModal.querySelector('form')
+                const formData = new FormData(form)
+                let shopify_collection_id = "{{ customer.metafields.donation.shopify_collection_id }}"
+
+                fetch(`${server_url}api/v1/orgs/create_campaign_request?shopify_collection_id=${shopify_collection_id}`,
+                  {
+                    body: formData,
+                    method: 'POST',
+                  })
+                  .then(response => { 
+                    return response.json()
+                  })
+                  .then(result => {
+                    console.log(result)
+                  })
+                  .catch(error => console.error('Error:', error))
+              })
+            })
+
+            document.querySelectorAll('.card--update').forEach(btn => {
+              btn.addEventListener('click', e => {
+                const productId = e.currentTarget.dataset.id
+                const updatesModal = document.querySelector('#updates__modal')
+                updatesModal.querySelector('#id').value = productId;
+                updatesModal.querySelector('#csvFileInput').value = '';
+                updatesModal.querySelector('#filename').innerText = 'Drag files here to upload';
+                updatesModal.style.display = 'block';
+                updatesModal.querySelectorAll('.close--modal').forEach(btn => {
+                  btn.addEventListener('click', e => {
+                    const modalId = e.currentTarget.dataset.id
+                    document.getElementById(modalId).style.display = 'none'
+                  })
+                })
+                updatesModal.querySelector('button').addEventListener('click', e => {
+                  updatesModal.style.display = 'none';
+                  const form = updatesModal.querySelector('form');
+                  const formData = new FormData(form);
+                  let shopify_collection_id = "{{ customer.metafields.donation.shopify_collection_id }}";
+
+                  fetch(`${server_url}api/v1/orgs/update_campaign_request?shopify_collection_id=${shopify_collection_id}`,
+                      {
+                          body: formData,
+                          method: "POST"
+                      })
+                      .then(function(response){ 
+                        return response.json()
+                      })
+                      .then(function(data){
+                        if (data.success) {
+                        } else {
+                        }
+                      })
+                      .catch(error => console.error('Error:', error)); 
+                })
+              })
+            })
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
+            function getUniqueListBy(arr, key) {
+                return [...new Map(arr.map(item => [item[key], item])).values()]
+            }
+
+            filteredDonors = getUniqueListBy(data.donors, "email");
+            document.getElementById("weekly-donation").innerHTML = data.sum_of_week_donations ? data.sum_of_week_donations : 0.0;
+            document.getElementById("monthly-donation").innerHTML = data.sum_of_month_donations ? data.sum_of_month_donations : 0.0;
+            document.getElementById("total-donation").innerHTML = data.sum_of_total_donations ? data.sum_of_total_donations : 0.0;
+            document.querySelector('.campaigns-count-panel .active-count h2').innerHTML = data.campaigns.length;
+            document.querySelector('.donors-count-panel .donors-count h2').innerHTML = filteredDonors.length;
+            data.donations.forEach(donation => {
+              if (donation.formatted_amount) {
+                const donor = filteredDonors.find(donor => donor.id == donation.donor_id)
+                const donorName = donor ? `${donor.first_name} ${donor.last_name}` : ''
+                document.querySelector('.nonprofit--donations table tbody').innerHTML += `
+                  <tr>
+                  <td>${donorName} </td>
+                  <td>${donation.donation_date}</td>
+                  <td>${donation.formatted_amount}</td>
+                </tr>
+                `
+              }
+            });
+
+
+            let donorList = [];
+            filteredDonors.forEach((donor, index) => {
+                donorList.push({
+                  "id": donor.id,
+                  "text": donor.name,
+                });
+                document.querySelector('.nonprofit--donors table tbody').innerHTML += `
+                  <tr>
+                    <td>${donor.first_name}</td>
+                    <td>${donor.last_name}</td>
+                    <td>${donor.email} </td>
+                    <td>${donor.phone}</td>
+                    <td>${donor.city}</td>
+                    <td>${donor.state}</td>
+                    <td>${donor.created_at}</td>
+                  </tr>
+                `
+            });
+
+            $('#address-selector').selectivity({
+                items: donorList,
+                multiple: true,
+                placeholder: 'Please Select Donors'
+            });
+        } else {
+            document.getElementById("weekly-donation").innerHTML = 0.0;
+            document.getElementById("monthly-donation").innerHTML = 0.0;
+            document.getElementById("total-donation").innerHTML = 0.0;
+            document.querySelector('.campaigns-count-panel .active-count h2').innerHTML = 0;
+            document.querySelector('.donors-count-panel .donors-count h2').innerHTML = 0;
+        }
+        })
+        .catch(function(error) {
+            console.log(error);
+        });
+</script>
+
+<script>
+    // script.js
+    const uploadButton = document.getElementById('uploadButton');
+    const uploadModal = document.getElementById('uploadModal');
+    const closeModal = document.getElementById('closeModal');
+    const csvFileInput = document.getElementById('csvFileInput');
+    const uploadCSV = document.getElementById('uploadCSV');
+    const successMessage = document.getElementById('successMessage');
+    
+    uploadButton.addEventListener('click', () => {
+        successMessage.style.display = 'none';
+        uploadModal.querySelector('#csvFileInput').value = '';
+        uploadModal.querySelector('#filename').innerText = 'Drag files here to upload';
+        uploadModal.style.display = 'block';
+    });
+    
+    closeModal.addEventListener('click', () => {
+        uploadModal.style.display = 'none';
+    });
+    
+    uploadCSV.addEventListener('click', () => {
+        // Handle CSV file upload here (e.g., using FormData and AJAX)
+        // On successful upload, show the success message and hide the modal
+        uploadModal.style.display = 'none';
+
+        const form = document.getElementById('non-profit-upload-form');
+        const formData = new FormData(form);
+        let shopify_collection_id = "{{ customer.metafields.donation.shopify_collection_id }}";
+
+        successMessage.style.display = 'block';
+        successMessage.style.color = '#004c98';
+        successMessage.querySelector('p').innerText = 'Uploading now...';
+
+        fetch(`https://sponsor-pet-app-e9a9109e0444.herokuapp.com/api/v1/orgs/upload_donors?shopify_collection_id=${shopify_collection_id}`,
+            {
+                body: formData,
+                method: "POST"
+            })
+            .then(function(response){ 
+              return response.json()
+            })
+            .then(function(data){
+              if (data.success) {
+                successMessage.style.display = 'block';
+                successMessage.style.color = '#004c98';
+                successMessage.querySelector('p').innerText = 'CSV file uploaded successfully!';
+              } else {
+                successMessage.style.display = 'block';
+                successMessage.style.color = '#ff5c18';
+                successMessage.querySelector('p').innerText = 'Whoops! Upload failed!';
+              }
+            })
+            .catch(error => console.error('Error:', error)); 
+    });
+    
+    // Close the modal when clicking the black overlay
+    uploadModal.addEventListener('click', (event) => {
+        if (event.target === uploadModal) {
+            uploadModal.style.display = 'none';
+        }
+    });
+    
+    document.getElementById("csvFileInput").addEventListener("change", function (e) {
+        let parentElement = this.closest(".account--csvFileInput");
+        let filenameElement = parentElement.querySelector("#filename");
+        let previewImage = parentElement.querySelector("#previewImage");
+        
+        filenameElement.textContent = e.target.files[0].name;
+        
+        // Show the preview image when a file is selected
+        if (e.target.files && e.target.files[0]) {
+            let reader = new FileReader();
+            reader.onload = function (e) {
+                // previewImage.src = e.target.result;
+                previewImage.style.display = 'block';
+            };
+            reader.readAsDataURL(e.target.files[0]);
+        }
+    });
+</script>
+
+{% schema %}
+  {
+    "name": "Nonprofit Dashboard",
+    "settings": [
+        {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      },
+      {
+        "type": "collection",
+        "id": "collection",
+        "label": "Chose Collection to show on slideshow"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ],
+    "presets": [
+      {
+        "name": "Nonprofit Dashboard"
+      }
+    ]
+  }
+{% endschema %}

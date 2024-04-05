@@ -1,0 +1,302 @@
+<link
+  rel="stylesheet"
+  href="{{ 'section-non-profit-description.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'"
+>
+
+{%- liquid
+  assign product = section.settings.product
+  assign product_image = product.images | first
+  assign product_title = product.title
+  assign logo = collection.metafields.custom.logo
+  assign ein_number = collection.metafields.custom.ein
+  assign phone = collection.metafields.custom.phone
+  assign email = collection.metafields.custom.email
+  assign location = collection.metafields.custom.location
+  assign description = collection.metafields.custom.short_description
+  assign social_links = collection.metafields.custom.social_links
+  assign city = location | split: '","state":"' | first | split: ':"' | last
+  assign state = location | split: '","state":"' | last | split: '"}' | first
+  assign website_url = collection.metafields.custom.website_url
+  assign facebook_url = collection.metafields.custom.facebook_url
+  assign instagram_url = collection.metafields.custom.instagram_url
+-%}
+
+<div class="non-profit-description section-{{ section.id }}-padding">
+  <div class="page-width">
+    <div class="np-desc-wrap">
+      <div class="np-img-wrap">
+        {% if logo != blank %}
+          <img src="{{ logo | img_url: 'master' }}">
+        {% else %}
+          <img src="{{ collection.featured_image | img_url: 'master' }}">
+        {% endif %}
+        <div class="nonpro-desc--count hide--desktop">
+          {%- for block in section.blocks -%}
+            {% if block.type == 'block' %}
+              <div class="desc-count--elemt">
+                <h4 class="count">{{ block.settings.count }}</h4>
+                <p>{{ block.settings.text }}</p>
+              </div>
+            {% endif %}
+          {%- endfor -%}
+        </div>
+      </div>
+      <div class="np-details">
+        <div class="nonpro-heading">
+          <div class="nonpro-desc">
+            {%- if location -%}
+              <span class="city-state">{{ city }}, {{ state }}</span>
+            {% endif %}
+            {%- if ein_number != blank -%}
+              <p>{{ ein_number }}</p>
+            {% endif %}
+            <h2>{{ collection.title }}</h2>
+          </div>
+          <div class="nonpro-desc--count hide--mobile">
+            {%- for block in section.blocks -%}
+              {% if block.type == 'block' %}
+                <div class="desc-count--elemt">
+                  <h4 class="count">{{ block.settings.count }}</h4>
+                  <p>{{ block.settings.text }}</p>
+                </div>
+              {% endif %}
+            {%- endfor -%}
+          </div>
+        </div>
+        {%- if collection.description != blank -%}
+          <div class="np-desc--text">{{ collection.description }}</div>
+        {%- endif -%}
+        <ul class="desc-left--social">
+          <div></div>
+          <li>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://sponsorapet.org/collections/{{ collection.handle }}" target="_blank">
+              {% render 'icon-facebook1' %}
+            </a>
+          </li>
+          {% comment %}<li>{% endcomment %}
+            {% comment %}<a href="{{ instagram_url }}">{% endcomment %}
+              {% comment %}{% render 'icon-instagram' %}{% endcomment %}
+            {% comment %}</a>{% endcomment %}
+          {% comment %}</li>{% endcomment %}
+          <li>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://sponsorapet.org/collections/{{ collection.handle }}" target="_blank">
+              {% render 'icon-linkdin1' %}
+            </a>
+          </li>
+        </ul>
+        <div class="donation-wrap">
+          <ul>
+            {%- for block in section.blocks -%}
+              {% if block.type == 'donation' %}
+                <li>
+                  <script type="text/javascript" defer src="https://donorbox.org/install-popup-button.js"></script>
+                  <a
+                    class="button {% if block.settings.disable_icon_btn %}button--primary{% endif %} dbox-donation-button"
+                    href="https://donorbox.org/{{ collection.metafields.custom.donation_form }}"
+                  >
+                    {{- block.settings.label -}}
+                  </a>
+                </li>
+              {%- endif -%}
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="support-monthly-select">
+          {%- render 'icon-arrow-down1' -%}
+          <select name="supportDuration" class="np-monthly-select ssap-non-profit-page-select">
+            <option selected="selected" value="default_option">Support Monthly</option>
+            <option value="one_time">Support Onetime</option>
+          </select>
+        </div>
+        <div class="external-site">
+          <select class="ssap-non-profit-page-select" data-external-links-selector onchange="externalLinkSelect();">
+            <option selected="selected" value="default_option">{{ collection.title }} External Links</option>
+            <option value="" data-url="{{ facebook_url }}">Facebook</option>
+            <option value="" data-url="{{ instagram_url }}">Instagram</option>
+            <option value="" data-url="{{ website_url }}">Website</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<script>
+	function externalLinkSelect(e) {
+	  const select = document.querySelector('select[data-external-links-selector]')
+		window.open(select.options[select.selectedIndex].dataset.url, "_blank")
+	}
+</script>
+
+{% schema %}
+{
+  "name": "Non Profit Description",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Animal Product"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title Right Side"
+    },
+    {
+      "type": "richtext",
+      "id": "description_right",
+      "label": "Description Right Side"
+    },
+    {
+      "type": "text",
+      "id": "title_2",
+      "label": "Title Right 2"
+    },
+    {
+      "type": "text",
+      "id": "sum_text",
+      "label": "Sum Text"
+    },
+    {
+      "type": "header",
+      "content": "Share to help"
+    },
+    {
+      "type": "text",
+      "id": "share_text",
+      "label": "Add Share Text"
+    },
+    {
+      "type": "url",
+      "id": "facebook",
+      "label": "Add URL Facebook"
+    },
+    {
+      "type": "url",
+      "id": "whatsapp",
+      "label": "Add URL Whatsapp"
+    },
+    {
+      "type": "url",
+      "id": "instagram",
+      "label": "Add URL Instagram"
+    },
+    {
+      "type": "url",
+      "id": "twitter",
+      "label": "Add URL Twitter"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Add URL Link"
+    },
+    {
+      "type": "url",
+      "id": "icon_imgurl",
+      "label": "Icon Image 1 Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_img",
+      "label": "Icon Image 1"
+    },
+    {
+      "type": "url",
+      "id": "icon_imgurl2",
+      "label": "Icon Image 2 Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_img2",
+      "label": "Icon Image 2"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "block",
+      "name": "t:sections.slideshow.blocks.slide.name",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "Add Icon",
+          "info": "Icon size 40x40"
+        },
+        {
+          "type": "text",
+          "id": "count",
+          "label": "Add Number"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "donation",
+      "name": "Donation Money",
+      "settings": [
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Button URL"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Button label"
+        },
+        {
+          "type": "checkbox",
+          "id": "disable_icon_btn",
+          "label": "Disable icon",
+          "default": false
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

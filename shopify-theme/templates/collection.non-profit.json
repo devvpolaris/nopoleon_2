@@ -1,0 +1,362 @@
+{
+  "sections": {
+    "main": {
+      "type": "non-profit-description",
+      "blocks": {
+        "7b843034-e33f-4e10-a8a5-eb5314987649": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "img": "shopify:\/\/shop_images\/icon_-_product.png",
+            "count": "14,162",
+            "text": "Products Received"
+          }
+        },
+        "d2319ab2-823f-4027-9a89-4141b1d857c6": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/help_1.svg",
+            "count": "81",
+            "text": "Animals Helped"
+          }
+        },
+        "6f6b020a-e0a8-4efe-9d19-9a8c423cdd7b": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "img": "shopify:\/\/shop_images\/money_1.svg",
+            "count": "$197,059",
+            "text": "Donations Raised"
+          }
+        },
+        "ee173bb0-ca38-4841-be17-c98323ce29e6": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "img": "shopify:\/\/shop_images\/member_1.svg",
+            "count": "2019",
+            "text": "Member Since"
+          }
+        },
+        "18628a81-22f8-46f8-a986-cc2a55fa20b1": {
+          "type": "donation",
+          "settings": {
+            "url": "https:\/\/sponsor-a-pet.myshopify.com\/checkouts\/c\/91fa5ab1df6761a36981bc4699f3028b\/information",
+            "label": "$10",
+            "disable_icon_btn": true
+          }
+        },
+        "c2b47dd2-05d6-42bb-a4b3-4cbf1b4375bd": {
+          "type": "donation",
+          "settings": {
+            "url": "https:\/\/sponsor-a-pet.myshopify.com\/checkouts\/c\/91fa5ab1df6761a36981bc4699f3028b\/information",
+            "label": "$25",
+            "disable_icon_btn": false
+          }
+        },
+        "bfdcb5e8-98ed-41ce-91f6-58ea7f7c4f6f": {
+          "type": "donation",
+          "settings": {
+            "url": "https:\/\/sponsor-a-pet.myshopify.com\/checkouts\/c\/91fa5ab1df6761a36981bc4699f3028b\/information",
+            "label": "$50",
+            "disable_icon_btn": false
+          }
+        },
+        "3bf6846e-77e6-4f94-a8b5-9e7cea660d03": {
+          "type": "donation",
+          "settings": {
+            "url": "https:\/\/sponsor-a-pet.myshopify.com\/checkouts\/c\/91fa5ab1df6761a36981bc4699f3028b\/information",
+            "label": "$100",
+            "disable_icon_btn": false
+          }
+        },
+        "7541b71f-5f91-4f2b-8706-34feb29d8bff": {
+          "type": "donation",
+          "settings": {
+            "url": "https:\/\/sponsorapet.org\/products\/sponsor-a-pet",
+            "label": "Other",
+            "disable_icon_btn": false
+          }
+        }
+      },
+      "block_order": [
+        "7b843034-e33f-4e10-a8a5-eb5314987649",
+        "d2319ab2-823f-4027-9a89-4141b1d857c6",
+        "6f6b020a-e0a8-4efe-9d19-9a8c423cdd7b",
+        "ee173bb0-ca38-4841-be17-c98323ce29e6",
+        "18628a81-22f8-46f8-a986-cc2a55fa20b1",
+        "c2b47dd2-05d6-42bb-a4b3-4cbf1b4375bd",
+        "bfdcb5e8-98ed-41ce-91f6-58ea7f7c4f6f",
+        "3bf6846e-77e6-4f94-a8b5-9e7cea660d03",
+        "7541b71f-5f91-4f2b-8706-34feb29d8bff"
+      ],
+      "settings": {
+        "product": "",
+        "title": "Exclusively Support",
+        "description_right": "<p>Subscribe to automatically donate each month and help save as many animals as possible.<\/p>",
+        "title_2": "Choose Your Monthly Donation:",
+        "sum_text": "",
+        "share_text": "Share to help",
+        "facebook": "https:\/\/facebook.com\/",
+        "whatsapp": "",
+        "instagram": "",
+        "twitter": "",
+        "link": "",
+        "icon_imgurl": "",
+        "icon_img": "shopify:\/\/shop_images\/cr_w_388_h_194_1.png",
+        "icon_imgurl2": "",
+        "icon_img2": "shopify:\/\/shop_images\/amazon-wish-list-button-5.png",
+        "padding_top": 68,
+        "padding_bottom": 68
+      }
+    },
+    "shelter": {
+      "type": "non-profit-cdly-shelter",
+      "settings": {
+        "heading": "",
+        "collection": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "save-many": {
+      "type": "non-profit-save-many",
+      "blocks": {
+        "9e2470d7-f0cd-4236-8ef2-83f57dc8c303": {
+          "type": "block",
+          "settings": {
+            "url": "https:\/\/sponsor-a-pet.myshopify.com\/checkouts\/c\/91fa5ab1df6761a36981bc4699f3028b\/information",
+            "label": "$10",
+            "disable_icon_btn": true
+          }
+        },
+        "19946eb6-e34e-49e5-ac47-d40cb9dcd9e0": {
+          "type": "block",
+          "settings": {
+            "url": "https:\/\/sponsor-a-pet.myshopify.com\/checkouts\/c\/91fa5ab1df6761a36981bc4699f3028b\/information",
+            "label": "$25",
+            "disable_icon_btn": false
+          }
+        },
+        "c90d3a74-506f-4d1f-a840-0da657e0f018": {
+          "type": "block",
+          "settings": {
+            "url": "https:\/\/sponsor-a-pet.myshopify.com\/checkouts\/c\/91fa5ab1df6761a36981bc4699f3028b\/information",
+            "label": "$50",
+            "disable_icon_btn": false
+          }
+        },
+        "ec0d80d6-8b26-492b-8611-085bbf138965": {
+          "type": "block",
+          "settings": {
+            "url": "https:\/\/sponsor-a-pet.myshopify.com\/checkouts\/c\/91fa5ab1df6761a36981bc4699f3028b\/information",
+            "label": "$100",
+            "disable_icon_btn": false
+          }
+        },
+        "0de01a3b-fc3d-4ebf-bf2c-9d76753b72a9": {
+          "type": "block",
+          "settings": {
+            "url": "https:\/\/sponsorapet.org\/products\/sponsor-a-pet",
+            "label": "Other",
+            "disable_icon_btn": false
+          }
+        }
+      },
+      "block_order": [
+        "9e2470d7-f0cd-4236-8ef2-83f57dc8c303",
+        "19946eb6-e34e-49e5-ac47-d40cb9dcd9e0",
+        "c90d3a74-506f-4d1f-a840-0da657e0f018",
+        "ec0d80d6-8b26-492b-8611-085bbf138965",
+        "0de01a3b-fc3d-4ebf-bf2c-9d76753b72a9"
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/unsplash_bulldog.png",
+        "heading": "Pledge a Monthly Donation",
+        "description": "<p>Subscribe to automatically donate each month and help save as many animals as possible.<\/p>",
+        "title": "Choose Your Monthly Donation:",
+        "sum_text": "You'll be charged $25\/month starting on Apr 26th, 2023",
+        "url": "https:\/\/sponsorapet.org\/products\/sponsor-a-pet",
+        "label": "I'm In",
+        "policy_content": "By clicking on the I'M IN button you are accepting the CUDDLY Terms of Use and Privacy Policy.",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "success": {
+      "type": "non-profit-success",
+      "blocks": {
+        "a3210030-5c30-4ff2-afbc-04732d09e660": {
+          "type": "block",
+          "settings": {
+            "article": "the-daily-pet\/the-pet-effect-science-based-facts-about-animal-and-human-bonding",
+            "flip": false
+          }
+        },
+        "eb1181dd-031e-4e6a-b27a-c613433f3df3": {
+          "type": "block",
+          "settings": {
+            "article": "the-daily-pet\/reunited-at-last-former-marine-meets-german-shepherd-he-served-with-after-years-of-separation",
+            "flip": true
+          }
+        }
+      },
+      "block_order": [
+        "a3210030-5c30-4ff2-afbc-04732d09e660",
+        "eb1181dd-031e-4e6a-b27a-c613433f3df3"
+      ],
+      "settings": {
+        "heading": "Success Stories",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 16,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "d8b90a48-e1ae-4ad7-85cf-539af46eaf13": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--20045667598637__d8b90a48-e1ae-4ad7-85cf-539af46eaf13-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Title of Success Story",
+            "heading_size": "h1",
+            "color": "#ff5c18"
+          }
+        },
+        "template--20045667598637__d8b90a48-e1ae-4ad7-85cf-539af46eaf13-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis lobortis lacus. Quisque blandit, nisl in placerat aliquam, turpis quam sodales nisi, vel ullamcorper nibh diam fringilla ex. Praesent sit amet eleifend nibh. Proin eget varius quam. Mauris erat est, consequat at tincidunt quis, euismod id lectus.<\/p>",
+            "text_style": "body",
+            "color": "#222222"
+          }
+        },
+        "template--20045667598637__d8b90a48-e1ae-4ad7-85cf-539af46eaf13-button-1": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "template--20045667598637__d8b90a48-e1ae-4ad7-85cf-539af46eaf13-heading-1",
+        "template--20045667598637__d8b90a48-e1ae-4ad7-85cf-539af46eaf13-text-1",
+        "template--20045667598637__d8b90a48-e1ae-4ad7-85cf-539af46eaf13-button-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Success Stories",
+        "image": "shopify:\/\/shop_images\/Ellipse_15.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "box_border": false,
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "mobile_content_alignment": "left",
+        "mobile_content_position": "bottom",
+        "padding_top": 36,
+        "padding_bottom": 16,
+        "wave_bg": false,
+        "color_background": "#ffffff",
+        "image_border_radius": 16
+      }
+    },
+    "9312dc04-b9eb-40ad-baa6-a96ed93b1adb": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--20045667598637__9312dc04-b9eb-40ad-baa6-a96ed93b1adb-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Title of Success Story",
+            "heading_size": "h1",
+            "color": "#ff5c18"
+          }
+        },
+        "template--20045667598637__9312dc04-b9eb-40ad-baa6-a96ed93b1adb-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis lobortis lacus. Quisque blandit, nisl in placerat aliquam, turpis quam sodales nisi, vel ullamcorper nibh diam fringilla ex. Praesent sit amet eleifend nibh. Proin eget varius quam. Mauris erat est, consequat at tincidunt quis, euismod id lectus.<\/p>",
+            "text_style": "body",
+            "color": "#222222"
+          }
+        },
+        "template--20045667598637__9312dc04-b9eb-40ad-baa6-a96ed93b1adb-button-1": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "template--20045667598637__9312dc04-b9eb-40ad-baa6-a96ed93b1adb-heading-1",
+        "template--20045667598637__9312dc04-b9eb-40ad-baa6-a96ed93b1adb-text-1",
+        "template--20045667598637__9312dc04-b9eb-40ad-baa6-a96ed93b1adb-button-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".image-with-text__content {padding-right: 20px;}"
+      ],
+      "settings": {
+        "title": "",
+        "image": "shopify:\/\/shop_images\/Ellipse_14.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "box_border": false,
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "mobile_content_alignment": "left",
+        "mobile_content_position": "bottom",
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "wave_bg": false,
+        "color_background": "#ffffff",
+        "image_border_radius": 16
+      }
+    }
+  },
+  "order": [
+    "main",
+    "shelter",
+    "save-many",
+    "success",
+    "banner",
+    "product-grid",
+    "d8b90a48-e1ae-4ad7-85cf-539af46eaf13",
+    "9312dc04-b9eb-40ad-baa6-a96ed93b1adb"
+  ]
+}

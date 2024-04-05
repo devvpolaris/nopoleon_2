@@ -1,0 +1,24 @@
+.list-social {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-social__item .icon {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.list-social__link {
+  align-items: center;
+  display: flex;
+  padding: 0.75rem;
+  color: rgb(var(--color-foreground));
+}
+
+.list-social__link:hover .icon {
+  transform: scale(1.07);
+}
+
+.list-social__item:first-child .list-social__link {
+  padding-left: 0;
+}

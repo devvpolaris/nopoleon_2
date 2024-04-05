@@ -1,0 +1,25 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-account",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "c108752b-ecfc-4b0a-ba82-4659373754ec": {
+      "type": "non-profit-dashboard",
+      "settings": {
+        "heading": "",
+        "collection": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "c108752b-ecfc-4b0a-ba82-4659373754ec"
+  ]
+}

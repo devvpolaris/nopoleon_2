@@ -1,0 +1,271 @@
+.nonpro-heading .city-state {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 11px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #222222;
+}
+
+.nonpro-heading h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #004C98;
+    margin: 13px 0 18px 0;
+}
+
+.np-desc-wrap {
+    display: flex;
+}
+
+.np-img-wrap {
+    width: 40%;
+}
+
+.np-details {
+    width: 60%;
+    padding-left: 20px;
+}
+
+.nonpro-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc-count--elemt {
+    width: 80px;
+    padding: 5px 20px;
+    box-shadow: none;
+    border: 1px solid #F1F1F1;
+    margin: 0;
+    background: #FFF;
+}
+
+.desc-count--elemt h4 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    color: #FE5671;
+}
+
+.desc-count--elemt p {
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 10px;
+    margin: 0 0 5px 0;
+}
+
+.nonpro-desc--count {
+    display: none;
+}
+
+.np-desc--text p span {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #222222;
+}
+
+.np-desc--text p {
+    margin: 0;
+}
+
+ul.desc-left--social {
+    gap: 15px;
+    margin: 25px 0 10px;
+}
+
+ul.desc-left--social a {
+    width: 24px;
+    background-color: #FFFFFF;
+    height: 24px;
+}
+
+.donation-wrap ul {
+    margin: 11px 0 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.donation-wrap ul li {
+    list-style: none;
+}
+
+.support-monthly-select {
+    position: relative;
+    display: inline-block;
+    margin-top: 26px;
+}
+
+.support-monthly-select svg {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+select.np-monthly-select.ssap-non-profit-page-select {
+    background: linear-gradient(180deg, #07E 0%, #004C98 100%);
+    stroke-width: 1px;
+    stroke: #0067ce;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 0 16px;
+    border: none;
+    width: 260px;
+}
+
+select.np-monthly-select.ssap-non-profit-page-select option {
+    background: #0067CE;
+}
+
+.template--collection-non-profit .non-profit-description {
+    padding-bottom: 40px;
+}
+
+.desc-left--social svg path {
+    fill: #FF5C18;
+}
+
+.external-site {
+    margin-top: 25px;
+}
+
+@media (max-width: 768px) {
+    .np-desc-wrap {
+        display: block;
+    }
+
+    .np-img-wrap {
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .np-details {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    ul.desc-left--social {
+        margin: 25px 0 20px;
+    }
+
+    .nonpro-desc--count {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .nonpro-desc {
+        width: 100%;
+    }
+
+    .nonpro-heading h2 {
+        text-align: center;
+        font-size: 36px;
+        line-height: 43px;
+        margin: 5px 0 15px;
+    }
+
+    .nonpro-heading .city-state {
+        font-size: 16px;
+        line-height: 11px;
+        gap: 20px;
+    }
+
+    .donation-wrap ul {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .desc-count--elemt h4 {
+        margin-bottom: 0px;
+    }
+
+    .desc-count--elemt {
+        width: 75px;
+        height: 68px;
+    }
+
+    .non-profit-description {
+        padding-top: 51px;
+        padding-bottom: 18px;
+    }
+
+    .support-monthly-select {
+        width: 100%;
+        margin-top: 22px;
+    }
+
+    .support-monthly-select svg {
+        top: 55%;
+        transform: translateY(-40%);
+    }
+
+    .template--collection-non-profit .np-monthly-select.ssap-non-profit-page-select {
+        width: 100%;
+    }
+
+    .template--collection-non-profit .content-for-layout .non-profit-description {
+        padding-bottom: 10px;
+    }
+
+    .external-site select.ssap-non-profit-page-select {
+        margin-top: 0;
+    }
+
+    .template--collection-non-profit .donation-wrap {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .non-profit-description {
+        padding-bottom: 10px;
+    }
+}
+
+.ssap-non-profit-page-select:focus-visible,
+.ssap-non-profit-page-select1:focus-visible {
+    outline: none;
+    outline-offset: 0;
+    box-shadow: none;
+}
+
+.ssap-non-profit-page-select {
+    color: #004C98;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.donation-wrap ul li a.button:not(.button--primary),
+.savemany--elem2 ul li a.button:not(.button--primary) {
+    background: #FFF;
+    min-width: unset;
+}
+
+.donation-wrap ul li a.button.button--primary,
+.savemany--elem2 li a.button.button--primary {
+    color: #FFF;
+    min-width: unset;
+}

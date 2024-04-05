@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SpaApp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "turbo", type: "module" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body class="antialiased text-slate-500 dark:text-slate-400 dark:bg-slate-900">
+    <p class="notice"><%= notice %></p>
+    <% if current_user %>
+      <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete }, class: "logout" %>
+    <% end %>
+    <p class="alert"><%= alert %></p>
+    <main class="container mx-auto mt-28 px-5">
+      <%= yield %>
+    </main>
+  </body>
+</html>

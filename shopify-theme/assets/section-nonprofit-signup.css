@@ -1,0 +1,216 @@
+.page--nonprofit-signup .main-page-title {
+    display: none;
+}
+
+.page--nonprofit-signup .rrich-text__heading {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.page--nonprofit-signup .rich-text__text p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #222;
+}
+
+.signup-field {
+    width: 52%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.signup-field input,
+textarea,
+select {
+    width: 100%;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 14px;
+    padding: 0 15px;
+    color: #AAA;
+}
+
+.non-profit-signup *:focus-visible {
+    outline: none;
+    outline-offset: 0;
+    box-shadow: none;
+}
+
+.signup-field.col-2 {
+    display: flex;
+}
+
+* select {
+    -webkit-appearance: none;
+}
+
+.signup-field.col-2 .signup-field:first-child {
+    padding-right: 8px;
+}
+
+.signup-field.col-2 .signup-field:last-child {
+    padding-left: 7px;
+}
+
+.signup-field.col-2 .signup-field {
+    width: 50%;
+}
+
+.signup-field p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #004c98;
+    margin: 15px 0 10px 0;
+}
+
+.signup-field svg {
+    position: absolute;
+    right: 16px;
+    top: 70%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.signup-field textarea {
+    height: 95px;
+    padding: 10px 15px;
+}
+
+.page--nonprofit-signup .signup {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.page--nonprofit-signup .rich-text {
+    padding-bottom: 35px;
+}
+
+.page--nonprofit-signup .rich-text__wrapper {
+    max-width: 750px;
+}
+
+input[type="file"] {
+    margin: 20px 0 0 25px;
+    border: none;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 15px;
+    padding: 9px;
+    position: relative;
+    background-color: #FFF;
+    overflow: hidden;
+    width: 20%;
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    z-index: 2;
+}
+
+input[type="file"]:after {
+    background-color: #FFF;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    background: none;
+    color: none;
+    font: inherit;
+    padding: 0;
+    position: relative;
+    border: none;
+    text-align: left;
+    position: relative;
+    z-index: 100;
+    -webkit-appearance: none;
+}
+
+.image-upload {
+    display: flex;
+    border: 1px solid #DDD;
+    padding: 10px 15px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.page--nonprofit-signup .non-profit-signup .selected-image {
+    display: block;
+    background-color: #D9D9D9;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.selected-image img {
+    display: none;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    display: none;
+}
+
+input[type="file"]::file-selector-button {
+    display: none;
+}
+
+.image-upload label {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: #AAAAAA;
+    margin-left: 25px;
+}
+
+@media (max-width: 767px) {
+    .signup-field {
+        width: 100%;
+    }
+    .signup-field.col-2 {
+        display: block;
+    }
+    .signup-field.col-2 .signup-field {
+        width: 100%;
+    }
+    .signup-field.col-2 .signup-field:first-child {
+        padding-right: 0;
+    }
+    .signup-field.col-2 .signup-field:last-child {
+        padding-left: 0;
+    }
+    .page--nonprofit-signup .rich-text__text p {
+        font-size: 16px;
+    }
+    .page--nonprofit-signup .rich-text {
+        padding-bottom: 15px;
+    }
+    .page-width {
+        padding: 0 2rem;
+    }
+    .page--nonprofit-signup .rich-text__wrapper {
+        width: 100%;
+    }
+    input[type=file] {
+        width: 35%;
+    }
+}

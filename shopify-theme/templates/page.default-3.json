@@ -1,0 +1,72 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "38befaec-0bd4-4625-a517-fe1e625a218e": {
+      "type": "image-banner",
+      "blocks": {
+        "template--20045668122925__38befaec-0bd4-4625-a517-fe1e625a218e-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Find A Non-Profit",
+            "heading_size": "h1"
+          }
+        },
+        "template--20045668122925__38befaec-0bd4-4625-a517-fe1e625a218e-text-1": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "template--20045668122925__38befaec-0bd4-4625-a517-fe1e625a218e-buttons-1": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--20045668122925__38befaec-0bd4-4625-a517-fe1e625a218e-heading-1",
+        "template--20045668122925__38befaec-0bd4-4625-a517-fe1e625a218e-text-1",
+        "template--20045668122925__38befaec-0bd4-4625-a517-fe1e625a218e-buttons-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/pexels-photo-7564092.jpg",
+        "image_overlay_opacity": 25,
+        "image_height": "medium",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "wave_bg": true,
+        "color_text": "#ffffff",
+        "color_background": "rgba(0,0,0,0)"
+      }
+    },
+    "5e8a877d-c593-435b-9e41-7b651f1b0b36": {
+      "type": "non-profit-search",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "38befaec-0bd4-4625-a517-fe1e625a218e",
+    "5e8a877d-c593-435b-9e41-7b651f1b0b36"
+  ]
+}

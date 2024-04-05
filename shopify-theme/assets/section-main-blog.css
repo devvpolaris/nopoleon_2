@@ -1,0 +1,120 @@
+.blog-articles {
+  display: grid;
+  grid-gap: 1rem;
+  column-gap: var(--grid-mobile-horizontal-spacing);
+  row-gap: var(--grid-mobile-vertical-spacing);
+}
+
+.blog-articles .card-wrapper {
+  width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .blog-articles {
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--grid-desktop-horizontal-spacing);
+    row-gap: var(--grid-desktop-vertical-spacing);
+  }
+}
+
+
+.blog__banner {
+  width: 100%;
+  max-height: 315px;
+  object-fit: cover;
+}
+
+.blog-header__image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.blog-header__image {
+  position: relative;
+}
+
+.blog-header__image svg.icon-wave-top-white, 
+.blog-header__image svg.icon-slideshow-mobile-wave {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.blog-header__image svg.icon-slideshow-mobile-wave {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .blog-header__image svg.icon-wave-top-white {
+    display: none;
+  }
+  .blog-header__image svg.icon-slideshow-mobile-wave {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.blog-header__image .title--primary {
+  color: #FFF;
+  font-size: 4.5rem;
+}
+
+.blog-newsletter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, calc(-50% - 47px));
+  color: #ffffff;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  z-index: 2;
+}
+
+@media (min-width: 990px) {
+  .blog-header__image .title--primary {
+    font-size: 5.5rem;
+  }
+}
+
+.blog-articles {
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.blog-newsletter .newsletter-form__field-wrapper label {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.blog-newsletter .newsletter-form__field-wrapper button {
+  width: 30px;
+  height: 40px;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #004c98;
+}
+
+.blog-articles__loadmore {
+  margin-top: 3.8rem;
+}
+
+
+
+@media (min-width: 990px) {
+  .blog-articles__loadmore {
+    margin-top: 5.2rem;
+  }
+}

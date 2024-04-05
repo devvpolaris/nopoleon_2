@@ -1,0 +1,129 @@
+{{ 'component-donation-popup.css' | asset_url | stylesheet_tag }}
+
+<section id={{ section.id }}>
+  <div id="{{ section.settings.trigger }}" class="popup__overlay">
+    <div class="overlay_content"></div>
+    <div class="popup__box">
+      <h2 class="donation-title">{{ section.settings.title }}</h2>
+      {% if section.settings.image_desktop != blank %}
+        {{ section.settings.image_desktop | image_url: width: 1500 | image_tag: 
+         loading: 'lazy',
+         sizes: sizes,
+         widths: '165, 360, 535, 750, 1070, 1500',
+         class: 'popup-donation__desktop hide--mobile' }}
+      {% endif %}
+
+      {% if section.settings.image_mobile != blank %}
+        {{ section.settings.image_mobile | image_url: width: 800 | image_tag: 
+         loading: 'lazy',
+         sizes: sizes,
+         widths: '165, 360, 535, 750, 1070, 1500',
+         class: 'popup-donation__mobile hide--desktop' }}
+      {% endif %}
+
+      <a class="popup__close" href="#">
+        {% render 'icon-modal-close' %}
+      </a>
+      <div class="popup__content">
+        {% if section.settings.subtitle != blank %}
+          <h2 class="donation-subtitle">{{ section.settings.subtitle }}</h2>
+        {% endif %}
+        {% if section.settings.content != blank %}
+          {{ section.settings.content }}
+        {% endif %}
+        {% if section.settings.button_title != blank %}
+          <a href="{{ section.settings.button_link }}">
+            {% render 'icon-modal-gift' %}
+            {{ section.settings.button_title }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const closeBtn = document.querySelector(".popup__close");
+  const overlay = document.querySelector(".overlay_content");
+  const popupOverlay = document.querySelector('.popup__overlay');
+
+  const displayPopup = () => {
+    setTimeout(() => {
+      popupOverlay ?. classList.add('active');
+    }, 20000);
+  }
+  const generateSessionID = () => {
+    const timestamp = Date.now();
+    const randomNumber = Math.floor(Math.random() * 1000000);
+    return `${timestamp}-${randomNumber}`;
+  }
+
+  const getSessionID = () => localStorage.getItem('sessionID');
+  if (! getSessionID()) {
+    displayPopup();
+    const generatedSessionID = generateSessionID();
+    localStorage.setItem('sessionID', generatedSessionID);
+  }
+
+  const closePopup = (event) => {
+    event.preventDefault();
+    popupOverlay.classList.remove('active');
+    localStorage.setItem("donation_modal_status", 'disabled')
+  };
+
+  closeBtn.addEventListener("click", closePopup);
+  overlay.addEventListener("click", closePopup);
+</script>
+
+{% schema %}
+  {
+    "name": "Popup",
+    "settings": [
+      {
+        "id": "trigger",
+        "type": "text",
+        "label": "ID",
+        "info": "Unique ID for popup trigger",
+        "default": "donation-modal"
+      },
+      {
+        "id": "title",
+        "type": "text",
+        "label": "Title"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_desktop",
+        "label": "Popup Image (Desktop)"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_mobile",
+        "label": "Popup Image (Mobile)"
+      }, {
+        "id": "subtitle",
+        "type": "text",
+        "label": "Subtitle"
+      }, {
+        "id": "content",
+        "type": "richtext",
+        "label": "Content"
+      }, {
+        "id": "button_title",
+        "type": "text",
+        "label": "Button Title",
+        "default": "Donate"
+      }, {
+        "id": "button_link",
+        "type": "url",
+        "label": "Button URL"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Popup",
+        "category": "Window"
+      }
+    ]
+  }
+{% endschema %}

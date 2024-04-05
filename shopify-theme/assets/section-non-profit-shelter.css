@@ -1,0 +1,197 @@
+#ssap-sort {
+    background: unset;
+} 
+
+.ssap-vue-non-profit-filter-input-container svg {
+    width: 22px;
+    height: 15px;
+    left: 17px;
+}
+
+.template--collection-non-profit .ssap-non-profit-page-collection h3 {
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.template--collection-non-profit .coll--main button {
+    margin: 0;
+    background: #E86F00;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: none;
+    margin-bottom: 11px;
+}
+
+.template--collection-non-profit .coll--main .coll-value--persent {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #003366;
+    margin: 0;
+}
+
+.template--collection-non-profit .coll-valueline span {
+    background: #004C98;
+}
+
+.template--collection-non-profit .coll-loc svg, .template--collection-non-profit .coll-title svg {
+    width: 15px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.template--collection-non-profit .coll-loc, .template--collection-non-profit .coll-title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #003366;
+    display: flex;
+    align-items: flex-start;
+}
+
+.template--collection-non-profit .coll-loc {
+    gap: 0;
+}
+
+.template--collection-non-profit .coll--main {
+    padding: 17px 17px 13px 17px;
+}
+
+.template--collection-non-profit .external-site select.ssap-non-profit-page-select {
+    height: 50px;
+    padding: 16px 0 16px 10px;
+    font-size: 16px;
+} 
+
+.template--collection-non-profit .ssap-non-profit-page-filters select.ssap-non-profit-page-select {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #AAA; 
+    height: 50px;
+    padding: 16px 0 16px 10px;
+}
+
+.filter-wrap label {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #004C98;
+}
+
+.template--collection-non-profit .collection--col {
+    position: relative;
+    border-radius: 5px;
+    margin: 15px 10px 5px 10px;
+}
+
+.col-donate--price {
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    background-color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.col-donate--price p:first-child {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+}
+
+.col-donate--price p:last-child {
+    font-size: 7px;
+    font-weight: 700;
+    line-height: 8px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FF7c33;
+    margin: 0;
+}
+@media (max-width: 768px) {
+    .ssap-non-profit-page-filters .filter-wrap {
+        width: 100%;
+        padding: 10px;
+    }
+    .collection-col--donat {
+        display: block;
+    }
+    .col-donat--img { 
+        width: 100%; 
+        padding: 0;
+    }
+    .template--collection-non-profit .coll--main { 
+        width: 100%; 
+        padding: 20px;
+    }
+    .coll-desc, .coll-loc {
+        display: block;
+    }
+    .template--collection-non-profit .ssap-non-profit-page-collection h3 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    .col-donate--price {
+        right: 15px;
+        padding: 3px 12px;
+    } 
+    .col-donate--price p:first-child { 
+        color: #004C98;
+    }
+    .template--collection-non-profit .coll--main button {
+        border-radius: 5px;
+    }
+    .collection--col:first-child {
+        margin-top: 17px;
+    }
+    .collection--col {
+        margin: 10px 10px;
+    }
+}
+
+.ssap-non-profit-page-select:focus-visible, .ssap-non-profit-page-select1:focus-visible {
+    outline: none;
+    outline-offset: 0;
+    box-shadow: none;
+}
+.ssap-non-profit-page-select {
+    color: #004C98;
+    font-size: 16px;
+    font-weight: 700;
+}
+.donation-wrap ul li a.button:not(.button--primary), .savemany--elem2 ul li a.button:not(.button--primary) {
+    background: #FFF;
+    min-width: unset;
+}
+
+.donation-wrap ul li a.button.button--primary, .savemany--elem2 li a.button.button--primary  {
+    color: #FFF;
+    min-width: unset;
+}
+
+@media (max-width: 768px) {
+    .page-width {
+        padding: 0 2rem;
+    }
+    .ssap-non-profit-page-filters label {
+        margin-bottom: 10px;
+    }
+}

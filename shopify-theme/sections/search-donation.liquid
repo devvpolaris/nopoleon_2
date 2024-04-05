@@ -1,0 +1,41 @@
+<style>
+
+</style>
+
+<div class="search-donation" data-aos="fade-in">
+  
+</div>
+
+{% schema %}
+{
+  "name": "Donation",
+  "tag": "section",
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "community",
+      "name": "Community",
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Number",
+          "default": "1K+"
+        },
+        {
+          "type": "text",
+          "id": "heading_text",
+          "label": "Heading Text",
+          "default": "Lorem"
+        }
+      ]
+    }
+  ],
+  "settings": [],
+  "presets": [
+    {
+      "name": "Donation"
+    }
+  ]
+}
+{% endschema %}

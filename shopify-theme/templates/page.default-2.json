@@ -1,0 +1,206 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "eb65cb88-29ba-4536-983a-56a8150a1bff": {
+      "type": "image-banner",
+      "disabled": true,
+      "blocks": {
+        "template--17140303757613__eb65cb88-29ba-4536-983a-56a8150a1bff-16703096420d29cd7d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Become a corporate Sponsor Today!",
+            "heading_size": "h1"
+          }
+        },
+        "template--17140303757613__eb65cb88-29ba-4536-983a-56a8150a1bff-16703096420d29cd7d-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--17140303757613__eb65cb88-29ba-4536-983a-56a8150a1bff-16703096420d29cd7d-0",
+        "template--17140303757613__eb65cb88-29ba-4536-983a-56a8150a1bff-16703096420d29cd7d-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG-20221204-WA0021.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "9735342f-9741-4773-af93-25ee8d07ed88": {
+      "type": "multicolumn",
+      "disabled": true,
+      "blocks": {
+        "template--17140303757613__9735342f-9741-4773-af93-25ee8d07ed88-16703096426db4d26a-0": {
+          "type": "column",
+          "settings": {
+            "title": "What you can expect from your donation",
+            "text": "<p>• Monthly Email updates of the animals \/ Shelters that you've helped.<\/p><p>• Statistics of how many animals \/ shelters you've impacted<br\/>• Monthly Email updates collectively of Sponsor a Pet's impact<br\/>• Notification of your animal's birthday<br\/>• Recognition of outstanding Donors<br\/>• Volunteer Spotlight - Learn how others are making an impact in their community<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17140303757613__9735342f-9741-4773-af93-25ee8d07ed88-16703096426db4d26a-1": {
+          "type": "column",
+          "settings": {
+            "title": "Rewards",
+            "text": "<p>• Free Merchandise (based on giving level)<br\/>• Discounts from our Corporate Sponsorships<br\/>• Contests for whoever refers the most amount of new PetStar members\t\t\t\t<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17140303757613__9735342f-9741-4773-af93-25ee8d07ed88-16703096426db4d26a-0",
+        "template--17140303757613__9735342f-9741-4773-af93-25ee8d07ed88-16703096426db4d26a-1"
+      ],
+      "settings": {
+        "title": "WHY TO JOIN PETSTAR CLUB",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16703096342137b2b6": {
+      "type": "apps",
+      "blocks": {
+        "95587984-9e90-4e41-b5f8-127a0290bb60": {
+          "type": "shopify:\/\/apps\/powerful-contact-form-builder\/blocks\/app-block\/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+          "settings": {
+            "shortcode": "<div class=\"globo-formbuilder\" data-id=\"OTg4NDM=\"><\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "95587984-9e90-4e41-b5f8-127a0290bb60"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "3dc4631e-59e4-4074-96a2-a98dd1f01701": {
+      "type": "Multi-column-Slider",
+      "disabled": true,
+      "blocks": {
+        "template--17140303757613__3dc4631e-59e4-4074-96a2-a98dd1f01701-1670311384f6068d8f-0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17140303757613__3dc4631e-59e4-4074-96a2-a98dd1f01701-1670311384f6068d8f-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17140303757613__3dc4631e-59e4-4074-96a2-a98dd1f01701-1670311384f6068d8f-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "3c1082fd-39ae-4d90-a57f-93a3bdd723a0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "25f88685-7900-44a0-9ddb-24f2f2352b16": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "36edeff3-2dc3-406d-8108-a76fefd65781": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17140303757613__3dc4631e-59e4-4074-96a2-a98dd1f01701-1670311384f6068d8f-0",
+        "template--17140303757613__3dc4631e-59e4-4074-96a2-a98dd1f01701-1670311384f6068d8f-1",
+        "template--17140303757613__3dc4631e-59e4-4074-96a2-a98dd1f01701-1670311384f6068d8f-2",
+        "3c1082fd-39ae-4d90-a57f-93a3bdd723a0",
+        "25f88685-7900-44a0-9ddb-24f2f2352b16",
+        "36edeff3-2dc3-406d-8108-a76fefd65781"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "eb65cb88-29ba-4536-983a-56a8150a1bff",
+    "9735342f-9741-4773-af93-25ee8d07ed88",
+    "16703096342137b2b6",
+    "3dc4631e-59e4-4074-96a2-a98dd1f01701"
+  ]
+}

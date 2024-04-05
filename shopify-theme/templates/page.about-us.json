@@ -1,0 +1,292 @@
+{
+  "sections": {
+    "eded2f72-464e-4eff-9047-2171dcd1de2c": {
+      "type": "slideshow",
+      "blocks": {
+        "template--20071518863661__eded2f72-464e-4eff-9047-2171dcd1de2c-1689785426b1b1070d-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vector_1_2.png",
+            "image_mobile": "shopify:\/\/shop_images\/Rectangle_73.png",
+            "heading": "Giving animal rescues a platform to share stories and connect with animal lovers.",
+            "heading_size": "h2",
+            "disable_icon_btn1": false,
+            "button_label_1": "",
+            "link_1": "",
+            "button_style_1": "primary",
+            "disable_icon_btn2": false,
+            "button_label_2": "",
+            "link_2": "",
+            "button_style_2": "primary",
+            "disable_icon_btn3": false,
+            "button_label_3": "",
+            "link_3": "",
+            "button_style_3": "primary",
+            "disable_icon_btn4": false,
+            "button_label_4": "",
+            "link_4": "",
+            "button_style_4": "primary",
+            "disable_icon_btn5": false,
+            "button_label_5": "",
+            "link_5": "",
+            "button_style_5": "primary",
+            "subheading": "",
+            "box_align": "middle-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--20071518863661__eded2f72-464e-4eff-9047-2171dcd1de2c-1689785426b1b1070d-0"
+      ],
+      "custom_css": [
+        ".slideshow .banner__heading {font-size: 2.6rem;}",
+        "@media (min-width: 990px) {.slideshow .banner__heading {font-size: 4.8rem; }}"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "4b74a002-1633-46e2-b294-3bfb1c77c024": {
+      "type": "image-with-text",
+      "blocks": {
+        "59f337eb-c010-48d2-a183-a297cdb3df0f": {
+          "type": "caption",
+          "settings": {
+            "caption": "OUR MISSION",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium",
+            "color": "#003366"
+          }
+        },
+        "template--20071518863661__4b74a002-1633-46e2-b294-3bfb1c77c024-1689785812af09daaf-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We work together with passionate local organizations to amplify our impact in communities as we come together as one.",
+            "heading_size": "h1",
+            "color": "#ff5c18"
+          }
+        },
+        "template--20071518863661__4b74a002-1633-46e2-b294-3bfb1c77c024-1689785812af09daaf-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The mission of Sponsor a Pet is to provide every animal a loving environment that they can call home. Every animal deserves the opportunity to have their basic needs met; food, medicine, a safe and loving family. Our overarching goals are to eliminate Kill Shelters, Animal Abuse, and the destruction of their habitats.<\/p>",
+            "text_style": "subtitle",
+            "color": "#222222"
+          }
+        }
+      },
+      "block_order": [
+        "59f337eb-c010-48d2-a183-a297cdb3df0f",
+        "template--20071518863661__4b74a002-1633-46e2-b294-3bfb1c77c024-1689785812af09daaf-0",
+        "template--20071518863661__4b74a002-1633-46e2-b294-3bfb1c77c024-1689785812af09daaf-1"
+      ],
+      "custom_css": [
+        ".image-with-text__text.subtitle {font-size: 2rem; text-align: left;}"
+      ],
+      "settings": {
+        "title": "",
+        "image": "shopify:\/\/shop_images\/Ellipse_16.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "box_border": false,
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "mobile_content_alignment": "center",
+        "mobile_content_position": "bottom",
+        "padding_top": 36,
+        "padding_bottom": 72,
+        "wave_bg": false,
+        "color_background": "#ffffff",
+        "image_border_radius": 16
+      }
+    },
+    "a41e8359-9b6a-4666-8eff-2b44227d9a05": {
+      "type": "image-with-text",
+      "blocks": {
+        "0a0d2329-3e18-430c-bc92-87177e96613f": {
+          "type": "caption",
+          "settings": {
+            "caption": "OUR DEDICATION",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium",
+            "color": "#003366"
+          }
+        },
+        "template--20071518863661__a41e8359-9b6a-4666-8eff-2b44227d9a05-1689785812af09daaf-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We strive to share stories of positivity and laughter.",
+            "heading_size": "h1",
+            "color": "#ff5c18"
+          }
+        },
+        "template--20071518863661__a41e8359-9b6a-4666-8eff-2b44227d9a05-1689785812af09daaf-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We love uplifting stories and animals who need our help, and to give thanks to the volunteers who work tirelessly to help find these animals find their forever home. If this resonates with you, join our team and lets grow our community!<\/p>",
+            "text_style": "subtitle",
+            "color": "#222222"
+          }
+        },
+        "template--20071518863661__a41e8359-9b6a-4666-8eff-2b44227d9a05-1689785812af09daaf-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "JOIN",
+            "button_link": "shopify:\/\/pages\/donate",
+            "button_icon": "gift"
+          }
+        }
+      },
+      "block_order": [
+        "0a0d2329-3e18-430c-bc92-87177e96613f",
+        "template--20071518863661__a41e8359-9b6a-4666-8eff-2b44227d9a05-1689785812af09daaf-0",
+        "template--20071518863661__a41e8359-9b6a-4666-8eff-2b44227d9a05-1689785812af09daaf-1",
+        "template--20071518863661__a41e8359-9b6a-4666-8eff-2b44227d9a05-1689785812af09daaf-2"
+      ],
+      "custom_css": [
+        ".image-with-text__text.subtitle {font-size: 2rem; text-align: left;}"
+      ],
+      "settings": {
+        "title": "",
+        "image": "shopify:\/\/shop_images\/Ellipse_14_2ebe9027-c983-4ba7-8439-05aaf98e08bc.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "box_border": false,
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "mobile_content_alignment": "center",
+        "mobile_content_position": "bottom",
+        "padding_top": 100,
+        "padding_bottom": 36,
+        "wave_bg": false,
+        "color_background": "#ffffff",
+        "image_border_radius": 16
+      }
+    },
+    "46417b9d-2ca9-4599-bb79-2e596a8ba42c": {
+      "type": "rich-text",
+      "blocks": {
+        "template--20071518863661__46417b9d-2ca9-4599-bb79-2e596a8ba42c-16897879349726bb29-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>We are passionate individuals who came to together under a common vision to help all animals.<\/p><p><\/p>",
+            "heading_size": "h1",
+            "color": "#0067ce"
+          }
+        },
+        "template--20071518863661__46417b9d-2ca9-4599-bb79-2e596a8ba42c-16897879349726bb29-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We understand working together, moving in the same direction will have a greater impact. Sponsor a Pet provides an audience across the country that local non-profits do not have access to. As we come together we can create a lasting impact in all of our communities.<\/p>",
+            "color": "#222222"
+          }
+        }
+      },
+      "block_order": [
+        "template--20071518863661__46417b9d-2ca9-4599-bb79-2e596a8ba42c-16897879349726bb29-0",
+        "template--20071518863661__46417b9d-2ca9-4599-bb79-2e596a8ba42c-16897879349726bb29-1"
+      ],
+      "custom_css": [
+        ".rich-text__text {padding-top: 2rem; font-size: 2rem;}"
+      ],
+      "settings": {
+        "is_top_wave": false,
+        "is_bottom_wave": false,
+        "section_style": "normal",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "7817c0c8-d86b-4161-bcf7-555eaa449b4b": {
+      "type": "image-with-text",
+      "blocks": {
+        "738f9b3d-d91b-4bef-ad3d-f111b5ea8ea8": {
+          "type": "caption",
+          "settings": {
+            "caption": "HOW TO GET INVOLVED",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium",
+            "color": "#003366"
+          }
+        },
+        "template--20071518863661__7817c0c8-d86b-4161-bcf7-555eaa449b4b-168979673719ba51b3-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Meet Other Animal Lovers",
+            "heading_size": "h1",
+            "color": "#ff5c18"
+          }
+        },
+        "template--20071518863661__7817c0c8-d86b-4161-bcf7-555eaa449b4b-168979673719ba51b3-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We're focused on becoming the most joyful place for animals on the internet. There should be a place where the victories of rescued animals is celebrated and, more so, the rescuers get the recognition they deserve. Come join in!<\/p>",
+            "text_style": "subtitle",
+            "color": "#003366"
+          }
+        },
+        "template--20071518863661__7817c0c8-d86b-4161-bcf7-555eaa449b4b-168979673719ba51b3-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Join",
+            "button_link": "shopify:\/\/pages\/donate",
+            "button_icon": "gift"
+          }
+        }
+      },
+      "block_order": [
+        "738f9b3d-d91b-4bef-ad3d-f111b5ea8ea8",
+        "template--20071518863661__7817c0c8-d86b-4161-bcf7-555eaa449b4b-168979673719ba51b3-0",
+        "template--20071518863661__7817c0c8-d86b-4161-bcf7-555eaa449b4b-168979673719ba51b3-1",
+        "template--20071518863661__7817c0c8-d86b-4161-bcf7-555eaa449b4b-168979673719ba51b3-2"
+      ],
+      "custom_css": [
+        ".image-with-text__text.subtitle {text-align: left;}"
+      ],
+      "settings": {
+        "title": "",
+        "image": "shopify:\/\/shop_images\/Ellipse_15_10e5d33b-3e9c-4b99-b65b-947943f6a679.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "box_border": false,
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "mobile_content_alignment": "center",
+        "mobile_content_position": "bottom",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "wave_bg": true,
+        "color_background": "#f9f9f9",
+        "image_border_radius": 16
+      }
+    }
+  },
+  "order": [
+    "eded2f72-464e-4eff-9047-2171dcd1de2c",
+    "4b74a002-1633-46e2-b294-3bfb1c77c024",
+    "a41e8359-9b6a-4666-8eff-2b44227d9a05",
+    "46417b9d-2ca9-4599-bb79-2e596a8ba42c",
+    "7817c0c8-d86b-4161-bcf7-555eaa449b4b"
+  ]
+}

@@ -1,0 +1,267 @@
+ *:focus-visible {
+    outline: none;
+    outline-offset: 0;
+    box-shadow: none;
+}
+.page--animal-search .banner--content-align-center {
+    max-height: 360px;
+}
+
+#ssap-sort {
+    background: unset;
+} 
+
+.ssap-vue-non-profit-filter-input-container svg {
+    width: 22px;
+    height: 15px;
+    left: 17px;
+}
+
+.page--animal-search .ssap-non-profit-page-collection h3 {
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.page--animal-search .coll--main button {
+    margin: 0;
+    background: #E86F00;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: none;
+    margin-bottom: 11px;
+}
+
+.page--animal-search .coll--main .coll-value--persent {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #003366;
+    margin: 0;
+}
+
+.page--animal-search .coll-valueline span {
+    background: #004C98;
+}
+
+.page--animal-search .coll-loc svg, .page--animal-search .coll-title svg {
+    width: 15px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.page--animal-search .coll-loc, .page--animal-search .coll-title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #003366;
+    display: flex;
+    align-items: flex-start;
+}
+
+.page--animal-search .coll-loc {
+    gap: 0;
+}
+
+.page--animal-search .coll--main {
+    padding: 17px 17px 13px 17px;
+}
+
+.page--animal-search .external-site select.ssap-non-profit-page-select {
+    height: 50px;
+    padding: 16px 0 16px 10px;
+    font-size: 16px;
+} 
+
+.page--animal-search .ssap-non-profit-page-filters select.ssap-non-profit-page-select {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #AAA; 
+    height: 50px;
+    padding: 16px 0 16px 10px;
+}
+
+.filter-wrap label {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #004C98;
+}
+
+.page--animal-search .collection--col {
+    position: relative;
+    border-radius: 5px;
+    margin: 15px 10px 5px 10px;
+}
+
+.col-donate--price {
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    background-color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.col-donate--price p:first-child {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+}
+
+.col-donate--price p:last-child {
+    font-size: 7px;
+    font-weight: 700;
+    line-height: 8px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FF7c33;
+    margin: 0;
+}
+
+.page--animal-search .savemany--elem1 h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #004c98;
+}
+
+.page--animal-search .savemany--elem1 p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #222222;
+    margin-top: 33px;
+}
+
+.savemany--elem1 {
+    background: none;
+    padding: 30px 30px 10px;
+}
+
+.savemany--flex {
+    justify-content: center;
+    box-shadow: none;
+}
+
+.savemany--elem2 {
+    display: flex;
+    justify-content: center;
+}
+
+.page--animal-search .non-profit-savemany {
+    padding-bottom: 0;
+}
+
+.page--animal-search .savemany--elem2 ul li a {
+    margin-right: 2px;
+}
+
+.ssap-non-profit-page-select:focus-visible, .ssap-non-profit-page-select1:focus-visible {
+    outline: none;
+    outline-offset: 0;
+    box-shadow: none;
+}
+.ssap-non-profit-page-select {
+    color: #004C98;
+    font-size: 16px;
+    font-weight: 700;
+}
+.donation-wrap ul li a.button:not(.button--primary), .savemany--elem2 ul li a.button:not(.button--primary) {
+    background: #FFF;
+    min-width: unset;
+}
+
+.donation-wrap ul li a.button.button--primary, .savemany--elem2 li a.button.button--primary  {
+    color: #FFF;
+    min-width: unset;
+}
+
+@media (max-width: 768px) {
+    .animal-search {
+        padding-top: 20px;
+    }
+    .ssap-non-profit-page-filters .filter-wrap {
+        width: 100%;
+        padding: 10px;
+    }
+    .collection-col--donat {
+        display: block;
+    }
+    .col-donat--img { 
+        width: 100%; 
+        padding: 0;
+    }
+    .page--animal-search .coll--main { 
+        width: 100%; 
+        padding: 20px;
+    }
+    .coll-desc, .coll-loc {
+        display: block;
+    }
+    .page--animal-search .ssap-non-profit-page-collection h3 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    .col-donate--price {
+        right: 15px;
+        padding: 3px 12px;
+    } 
+    .col-donate--price p:first-child { 
+        color: #004C98;
+    }
+    .page--animal-search .coll--main button {
+        border-radius: 5px;
+    }
+    .collection--col:first-child {
+        margin-top: 17px;
+    }
+    .collection--col {
+        margin: 10px 10px;
+    }
+
+    .page-width {
+        padding: 0 2rem;
+    }
+    .ssap-non-profit-page-filters label {
+        margin-bottom: 10px;
+    }
+
+    .page--animal-search .banner__content {
+        max-height: 240px;
+    }
+
+    .page--animal-search .banner__media {
+        max-height: 240px;
+        position: absolute;
+    }
+
+    .page--animal-search .banner--content-align-center {
+        max-height: 240px;
+    }
+
+    .page--animal-search .savemany--elem1 {
+        padding: 31px 27px 10px 27px;
+    }
+}

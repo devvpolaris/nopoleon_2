@@ -1,0 +1,32 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-login",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16941179920762a44f": {
+      "type": "apps",
+      "blocks": {
+        "5a2e505a-2ef4-4800-aaba-92768c6aff48": {
+          "type": "shopify:\/\/apps\/powerful-form-builder\/blocks\/app-block\/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+          "settings": {
+            "shortcode": "<div class=\"globo-formbuilder\" data-id=\"xxxx\"><\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "5a2e505a-2ef4-4800-aaba-92768c6aff48"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16941179920762a44f"
+  ]
+}

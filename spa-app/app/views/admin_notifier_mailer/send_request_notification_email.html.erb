@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>New Request Received</h1>
+    <p>Name: <%= @request.name %></p>
+    <p>Email: <%= @request.email %></p>
+    <p>Mission: <%= @request.mission %></p>
+    <p>EIN: <%= @request.ein %></p>
+    <p>Address: <%= @request.address1 %> <%= @request.city %> <%= @request.state %> <%= @request.country %></p>
+  </body>
+</html>

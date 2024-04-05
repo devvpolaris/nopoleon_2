@@ -1,0 +1,597 @@
+{
+  "sections": {
+    "2e91e38e-e38a-46dc-a55d-231dc1d7d196": {
+      "type": "slideshow",
+      "blocks": {
+        "template--19851140530477__2e91e38e-e38a-46dc-a55d-231dc1d7d196-1689142012417f4957-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vector_1.png",
+            "image_mobile": "shopify:\/\/shop_images\/Rectangle_67.png",
+            "heading": "Help a Non-Profit in Need and Donate",
+            "heading_size": "h0",
+            "disable_icon_btn1": false,
+            "button_label_1": "Find Animals to Help",
+            "link_1": "shopify:\/\/pages\/animal-search",
+            "button_style_1": "primary",
+            "disable_icon_btn2": false,
+            "button_label_2": "Donate",
+            "link_2": "shopify:\/\/pages\/donate",
+            "button_style_2": "secondary",
+            "disable_icon_btn3": false,
+            "button_label_3": "",
+            "link_3": "",
+            "button_style_3": "primary",
+            "disable_icon_btn4": false,
+            "button_label_4": "",
+            "link_4": "",
+            "button_style_4": "primary",
+            "disable_icon_btn5": false,
+            "button_label_5": "",
+            "link_5": "shopify:\/\/pages\/nonprofit-signup",
+            "button_style_5": "primary",
+            "subheading": "<h6>Are you a Shelter\/Non-Profit?<\/h6><h6><a href=\"\/pages\/nonprofit-signup\" title=\"Nonprofit signup\">Click Here To Join<\/a><\/h6>",
+            "box_align": "middle-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--19851140530477__2e91e38e-e38a-46dc-a55d-231dc1d7d196-1689142012417f4957-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vector_1_1.png",
+            "image_mobile": "shopify:\/\/shop_images\/Rectangle_67_1.png",
+            "heading": "4 Dogs Farm Rescue Needs Your Help!",
+            "heading_size": "h0",
+            "disable_icon_btn1": false,
+            "button_label_1": "Donate Today!",
+            "link_1": "shopify:\/\/collections\/4-dogs-farm-rescue",
+            "button_style_1": "secondary",
+            "disable_icon_btn2": false,
+            "button_label_2": "",
+            "link_2": "",
+            "button_style_2": "primary",
+            "disable_icon_btn3": false,
+            "button_label_3": "",
+            "link_3": "",
+            "button_style_3": "primary",
+            "disable_icon_btn4": false,
+            "button_label_4": "",
+            "link_4": "",
+            "button_style_4": "primary",
+            "disable_icon_btn5": false,
+            "button_label_5": "",
+            "link_5": "",
+            "button_style_5": "primary",
+            "subheading": "<p>All proceeds go directly to 4 Dogs Farm Rescue.<\/p>",
+            "box_align": "middle-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--19851140530477__2e91e38e-e38a-46dc-a55d-231dc1d7d196-1689142012417f4957-0",
+        "template--19851140530477__2e91e38e-e38a-46dc-a55d-231dc1d7d196-1689142012417f4957-1"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "none",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "a59ccfa7-38ce-454e-8ffa-de1b307a3b4d": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17005643890989__a59ccfa7-38ce-454e-8ffa-de1b307a3b4d-16692167221f94b0a6-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Orange-Hands-Again.jpg",
+            "title": "Donate Through Sponsor a Pet",
+            "text": "<p>Choose the amount right for you and help animals and the non-profits caring for them.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17005643890989__a59ccfa7-38ce-454e-8ffa-de1b307a3b4d-16692167221f94b0a6-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hand_and_heart_Orange_Again.png",
+            "title": "Your Donation Is Received",
+            "text": "<p>All donations are sent directly to the organization you're supporting.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17005643890989__a59ccfa7-38ce-454e-8ffa-de1b307a3b4d-16692167221f94b0a6-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Picture-2.png",
+            "title": "Monthly Email Updates",
+            "text": "<p>Receive updates from the animals you've sponsored and hear more from amazing rescuers!<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17005643890989__a59ccfa7-38ce-454e-8ffa-de1b307a3b4d-16692167221f94b0a6-0",
+        "template--17005643890989__a59ccfa7-38ce-454e-8ffa-de1b307a3b4d-16692167221f94b0a6-1",
+        "template--17005643890989__a59ccfa7-38ce-454e-8ffa-de1b307a3b4d-16692167221f94b0a6-2"
+      ],
+      "settings": {
+        "title": "How Sponsor a Pet Works",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "show_title_border": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "172fc1c9-f783-44c5-a47a-45eb959c971e": {
+      "type": "logo-slider",
+      "blocks": {
+        "e850a260-e291-421a-8af6-01057c6056f9": {
+          "type": "item",
+          "settings": {
+            "url": "",
+            "collection": "4-dogs-farm-rescue"
+          }
+        },
+        "feb32b87-36d7-49d1-8766-c1113c45819d": {
+          "type": "item",
+          "settings": {
+            "url": "",
+            "collection": "almost-eden-rescue"
+          }
+        },
+        "2f295d5e-9cbe-4490-9754-3a02b5d14da7": {
+          "type": "item",
+          "settings": {
+            "url": "",
+            "collection": "american-cairo-animal-rescue-foundation"
+          }
+        },
+        "2047526c-38f9-4f1f-83b6-88373033c13d": {
+          "type": "item",
+          "settings": {
+            "url": "",
+            "collection": "animal-party-rescue-1"
+          }
+        },
+        "d6138dd5-c64f-4201-a60a-6b069fa6b892": {
+          "type": "item",
+          "settings": {
+            "url": "",
+            "collection": "bark-rescue-ca"
+          }
+        },
+        "c36f9957-7773-453f-b2a7-4963e277d440": {
+          "type": "item",
+          "settings": {
+            "url": "",
+            "collection": "black-cat-holistic-rescue-inc"
+          }
+        },
+        "32760201-b86c-471a-8c4e-3f96ad50148d": {
+          "type": "item",
+          "settings": {
+            "url": "",
+            "collection": "cantu-foundation"
+          }
+        },
+        "8eb58fc9-5431-4262-a7a0-91bb89111da8": {
+          "type": "item",
+          "settings": {
+            "url": "",
+            "collection": "fur-feather"
+          }
+        },
+        "58af2d18-6e47-49fd-a886-b9b348811d2d": {
+          "type": "item",
+          "settings": {
+            "url": "",
+            "collection": "hueys-rescue"
+          }
+        },
+        "42aca3c8-8daa-4229-ace2-f07343b3bb8a": {
+          "type": "item",
+          "settings": {
+            "url": "",
+            "collection": "locks-4-paws"
+          }
+        },
+        "7f774180-fe7a-4504-a036-9591e6ffa029": {
+          "type": "item",
+          "settings": {
+            "url": "",
+            "collection": "match-made-in-heaven-animal-rescue"
+          }
+        },
+        "4cb79da1-b289-4e62-b185-2ee7b846a67c": {
+          "type": "item",
+          "settings": {
+            "url": "",
+            "collection": "northern-california-sled-dog-rescue"
+          }
+        },
+        "172d0593-944a-47e4-8d4a-e6e0d64e1b64": {
+          "type": "item",
+          "settings": {
+            "url": "",
+            "collection": "viva-rescue-inc"
+          }
+        }
+      },
+      "block_order": [
+        "e850a260-e291-421a-8af6-01057c6056f9",
+        "feb32b87-36d7-49d1-8766-c1113c45819d",
+        "2f295d5e-9cbe-4490-9754-3a02b5d14da7",
+        "2047526c-38f9-4f1f-83b6-88373033c13d",
+        "d6138dd5-c64f-4201-a60a-6b069fa6b892",
+        "c36f9957-7773-453f-b2a7-4963e277d440",
+        "32760201-b86c-471a-8c4e-3f96ad50148d",
+        "8eb58fc9-5431-4262-a7a0-91bb89111da8",
+        "58af2d18-6e47-49fd-a886-b9b348811d2d",
+        "42aca3c8-8daa-4229-ace2-f07343b3bb8a",
+        "7f774180-fe7a-4504-a036-9591e6ffa029",
+        "4cb79da1-b289-4e62-b185-2ee7b846a67c",
+        "172d0593-944a-47e4-8d4a-e6e0d64e1b64"
+      ],
+      "settings": {
+        "heading": "Meet Our Rescue Partners",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "30d7a87c-0bf8-409c-a421-f5b391e6f8df": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19851140530477__30d7a87c-0bf8-409c-a421-f5b391e6f8df-16895978003d2b9b7b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Ways to Help Animals in Need<\/p>",
+            "heading_size": "h1",
+            "color": "#0067ce"
+          }
+        }
+      },
+      "block_order": [
+        "template--19851140530477__30d7a87c-0bf8-409c-a421-f5b391e6f8df-16895978003d2b9b7b-0"
+      ],
+      "custom_css": [
+        "h2 {color: #004c98;}"
+      ],
+      "settings": {
+        "is_top_wave": false,
+        "is_bottom_wave": false,
+        "section_style": "normal",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    },
+    "7d63879f-9f5d-4cd8-892f-5630d31af2c0": {
+      "type": "image-with-text",
+      "blocks": {
+        "b236e858-adaf-47f6-8853-ecc076bb9023": {
+          "type": "caption",
+          "settings": {
+            "caption": "Find animals to help",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium",
+            "color": "#003366"
+          }
+        },
+        "template--17005643890989__7d63879f-9f5d-4cd8-892f-5630d31af2c0-166911085556613c73-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Make Happy Families Possible",
+            "heading_size": "h1",
+            "color": "#ff5c18"
+          }
+        },
+        "template--17005643890989__7d63879f-9f5d-4cd8-892f-5630d31af2c0-166911085556613c73-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>See real animals currently in recovery. Follow their journeys and celebrate alongside rescuers.<\/p>",
+            "text_style": "subtitle",
+            "color": "#222222"
+          }
+        },
+        "template--17005643890989__7d63879f-9f5d-4cd8-892f-5630d31af2c0-166911085556613c73-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Search Animals",
+            "button_link": "shopify:\/\/pages\/animal-search",
+            "button_icon": "search"
+          }
+        }
+      },
+      "block_order": [
+        "b236e858-adaf-47f6-8853-ecc076bb9023",
+        "template--17005643890989__7d63879f-9f5d-4cd8-892f-5630d31af2c0-166911085556613c73-0",
+        "template--17005643890989__7d63879f-9f5d-4cd8-892f-5630d31af2c0-166911085556613c73-1",
+        "template--17005643890989__7d63879f-9f5d-4cd8-892f-5630d31af2c0-166911085556613c73-2"
+      ],
+      "settings": {
+        "title": "",
+        "image": "shopify:\/\/shop_images\/Ellipse_14_2ebe9027-c983-4ba7-8439-05aaf98e08bc.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "box_border": true,
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "mobile_content_alignment": "center",
+        "mobile_content_position": "mixed",
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "wave_bg": false,
+        "color_background": "#ffffff",
+        "image_border_radius": 16
+      }
+    },
+    "0c1d9ce1-698a-473f-b254-f3ed1bceb7b6": {
+      "type": "image-with-text",
+      "blocks": {
+        "bd61a042-feb9-4573-aa9b-af15cdaa5b0e": {
+          "type": "caption",
+          "settings": {
+            "caption": "The PetStar Club",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium",
+            "color": "#003366"
+          }
+        },
+        "template--17005643890989__0c1d9ce1-698a-473f-b254-f3ed1bceb7b6-166911085556613c73-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Joyful Animals on Autopilot",
+            "heading_size": "h1",
+            "color": "#ff5c18"
+          }
+        },
+        "template--17005643890989__0c1d9ce1-698a-473f-b254-f3ed1bceb7b6-166911085556613c73-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A monthly donation giving animals with the most dire needs a lifeline. Receive updates on how your donation transformed lives.<\/p>",
+            "text_style": "body",
+            "color": "#222222"
+          }
+        },
+        "template--17005643890989__0c1d9ce1-698a-473f-b254-f3ed1bceb7b6-166911085556613c73-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Donate",
+            "button_link": "shopify:\/\/pages\/donate",
+            "button_icon": "gift"
+          }
+        }
+      },
+      "block_order": [
+        "bd61a042-feb9-4573-aa9b-af15cdaa5b0e",
+        "template--17005643890989__0c1d9ce1-698a-473f-b254-f3ed1bceb7b6-166911085556613c73-0",
+        "template--17005643890989__0c1d9ce1-698a-473f-b254-f3ed1bceb7b6-166911085556613c73-1",
+        "template--17005643890989__0c1d9ce1-698a-473f-b254-f3ed1bceb7b6-166911085556613c73-2"
+      ],
+      "settings": {
+        "title": "",
+        "image": "shopify:\/\/shop_images\/Ellipse_15_10e5d33b-3e9c-4b99-b65b-947943f6a679.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "box_border": true,
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "mobile_content_alignment": "center",
+        "mobile_content_position": "mixed",
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "wave_bg": false,
+        "color_background": "#ffffff",
+        "image_border_radius": 16
+      }
+    },
+    "37c77f0f-fb40-4223-a5ef-9c36f0a9e522": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17005643890989__37c77f0f-fb40-4223-a5ef-9c36f0a9e522-16692167221f94b0a6-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WhatsApp_Image_2022-11-26_at_3.46.20_PM_1.jpg",
+            "title": "Tax Deductible Donations",
+            "text": "<p>All Monetary Donations to our non-profit partners are tax deductible.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17005643890989__37c77f0f-fb40-4223-a5ef-9c36f0a9e522-16692167221f94b0a6-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/House-Orange_bb267f65-ef12-4baf-8d29-f0ebbdac6f44.png",
+            "title": "Verified 501(c)(3) Organizations",
+            "text": "<p>Our verified non-profits partners pay nothing for our services.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17005643890989__37c77f0f-fb40-4223-a5ef-9c36f0a9e522-16692167221f94b0a6-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WhatsApp_Image_2022-11-26_at_3.46.20_PM.jpg",
+            "title": "Join Our Community",
+            "text": "<p>Working together amplifies our ability to provide every animal love and a home.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17005643890989__37c77f0f-fb40-4223-a5ef-9c36f0a9e522-16692167221f94b0a6-0",
+        "template--17005643890989__37c77f0f-fb40-4223-a5ef-9c36f0a9e522-16692167221f94b0a6-1",
+        "template--17005643890989__37c77f0f-fb40-4223-a5ef-9c36f0a9e522-16692167221f94b0a6-2"
+      ],
+      "settings": {
+        "title": "Reasons to Give to Sponsor a Pet",
+        "heading_size": "h1",
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "show_title_border": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "99150c73-c4ae-4f6d-8bbb-d23b1f63a226": {
+      "type": "image-with-text",
+      "blocks": {
+        "eb58e6bd-eddb-411a-adb1-d35ff1e2db2d": {
+          "type": "caption",
+          "settings": {
+            "caption": "WHO WE ARE",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large",
+            "color": "#003366"
+          }
+        },
+        "template--19851140530477__99150c73-c4ae-4f6d-8bbb-d23b1f63a226-16896123610b0415be-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We are pet enthusiasts trying our best to help other pets.",
+            "heading_size": "h1",
+            "color": "#ff5c18"
+          }
+        },
+        "template--19851140530477__99150c73-c4ae-4f6d-8bbb-d23b1f63a226-16896123610b0415be-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sponsor a Pet is a fundraising platform, dedicated to providing Animal Non-Profits a platform to share their stories and help raise necessary resources to save the lives of animals. We do this by working together with passionate local organizations to amplify our impact in communities as we come together as one.<br\/><br\/>The mission of Sponsor a Pet is to provide every animal a loving environment that they can call home. Every animal deserves the opportunity to have their basic needs met; food, medicine, a safe and loving family. Our overarching goals are to eliminate kill shelters, animal abuse, and the destruction of their habitats.<br\/><br\/>We strive to share stories of positivity, laughter, uplifting stories, animals who need our help, and to give thanks to the volunteers who work tirelessly to help find these animals find their forever home. If this resonates with you, join our team and lets grow our community!<\/p>",
+            "text_style": "subtitle",
+            "color": "#003366"
+          }
+        },
+        "template--19851140530477__99150c73-c4ae-4f6d-8bbb-d23b1f63a226-16896123610b0415be-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "shopify:\/\/pages\/our-mission",
+            "button_icon": "info"
+          }
+        }
+      },
+      "block_order": [
+        "eb58e6bd-eddb-411a-adb1-d35ff1e2db2d",
+        "template--19851140530477__99150c73-c4ae-4f6d-8bbb-d23b1f63a226-16896123610b0415be-0",
+        "template--19851140530477__99150c73-c4ae-4f6d-8bbb-d23b1f63a226-16896123610b0415be-1",
+        "template--19851140530477__99150c73-c4ae-4f6d-8bbb-d23b1f63a226-16896123610b0415be-2"
+      ],
+      "settings": {
+        "title": "About Sponsor a Pet",
+        "image": "shopify:\/\/shop_images\/Ellipse_15_1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "box_border": false,
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "mobile_content_alignment": "center",
+        "mobile_content_position": "bottom",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "wave_bg": true,
+        "color_background": "#f9f9f9",
+        "image_border_radius": 16
+      }
+    },
+    "6c4ad16d-2714-40e5-999c-d2707e709965": {
+      "type": "featured-collection",
+      "disabled": false,
+      "settings": {
+        "title": "Shop and Represent Your Passion",
+        "heading_size": "h1",
+        "description": "<p><strong>Every purchase goes to saving lives of Animals in Need<\/strong><\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "home",
+        "products_to_show": 9,
+        "columns_desktop": 5,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-2",
+        "image_ratio": "portrait",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16684028381cc2252a": {
+      "type": "apps",
+      "blocks": {
+        "d43ff931-49d9-417b-992b-daeff81d9f7f": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "d43ff931-49d9-417b-992b-daeff81d9f7f"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "2e91e38e-e38a-46dc-a55d-231dc1d7d196",
+    "a59ccfa7-38ce-454e-8ffa-de1b307a3b4d",
+    "172fc1c9-f783-44c5-a47a-45eb959c971e",
+    "30d7a87c-0bf8-409c-a421-f5b391e6f8df",
+    "7d63879f-9f5d-4cd8-892f-5630d31af2c0",
+    "0c1d9ce1-698a-473f-b254-f3ed1bceb7b6",
+    "37c77f0f-fb40-4223-a5ef-9c36f0a9e522",
+    "99150c73-c4ae-4f6d-8bbb-d23b1f63a226",
+    "6c4ad16d-2714-40e5-999c-d2707e709965",
+    "16684028381cc2252a"
+  ]
+}

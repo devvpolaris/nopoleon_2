@@ -1,0 +1,33 @@
+{
+  "sections": {
+    "main": {
+      "type": "partners-banner",
+      "settings": {
+        "banner_img": "shopify:\/\/shop_images\/Hero_7b07d294-9b68-4a50-a759-3d9d5979591f.png",
+        "heading": "Find our Corporate Partners"
+      }
+    },
+    "partners": {
+      "type": "corporate-partners",
+      "settings": {
+        "padding_top": 40,
+        "padding_bottom": 72
+      }
+    },
+    "contact": {
+      "type": "partners-contact",
+      "settings": {
+        "heading": "Want to become our Partner?",
+        "heading2": "Please fill out the form and we will contact you within 24 hours",
+        "heading_size": "h1",
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "partners",
+    "contact"
+  ]
+}

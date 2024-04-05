@@ -1,0 +1,205 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1dfa9a91-5c9c-4acb-9e39-f75983e9b2cc": {
+      "type": "image-banner",
+      "blocks": {
+        "template--17167068725549__1dfa9a91-5c9c-4acb-9e39-f75983e9b2cc-1670522483668b048d-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--17167068725549__1dfa9a91-5c9c-4acb-9e39-f75983e9b2cc-1670522483668b048d-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><\/p>"
+          }
+        },
+        "template--17167068725549__1dfa9a91-5c9c-4acb-9e39-f75983e9b2cc-1670522483668b048d-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--17167068725549__1dfa9a91-5c9c-4acb-9e39-f75983e9b2cc-1670522483668b048d-0",
+        "template--17167068725549__1dfa9a91-5c9c-4acb-9e39-f75983e9b2cc-1670522483668b048d-1",
+        "template--17167068725549__1dfa9a91-5c9c-4acb-9e39-f75983e9b2cc-1670522483668b048d-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG-20221204-WA0021.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "aab2483b-5db2-47d4-be6b-c1f0d711f527": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17167068725549__aab2483b-5db2-47d4-be6b-c1f0d711f527-1670522483caeef32c-0": {
+          "type": "column",
+          "settings": {
+            "title": "Why Become a Corporate Sponsor",
+            "text": "<p>• Company Spotlight across our social media platforms.  Reach millions of members of our audience<\/p><p>• Spsonored Social Media Posts highlighting your impact in the community<\/p><p>• In Person events with local non-profits<br\/>• Co-Branded Merchandise <br\/>• Networking Opportunities<br\/>• Tax decutible <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17167068725549__aab2483b-5db2-47d4-be6b-c1f0d711f527-1670522483caeef32c-1": {
+          "type": "column",
+          "settings": {
+            "title": "Company Benefits",
+            "text": "<p>• Improving Your Community - Studies show that 85 percent of of consumers have a better outlook on businesses that give to a charity that  they care about.<br\/>• Fostering a Positive Work environment - over 70% of 18-26 year olds prefer to work for a company that offers volunteer opportunities.<br\/>• Better Employee recruitment and Retention<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17167068725549__aab2483b-5db2-47d4-be6b-c1f0d711f527-1670522483caeef32c-0",
+        "template--17167068725549__aab2483b-5db2-47d4-be6b-c1f0d711f527-1670522483caeef32c-1"
+      ],
+      "settings": {
+        "title": "Become a Corporate Sponsor",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "form": {
+      "type": "contact-form-1",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "87cce37e-5c32-4479-96cb-070e0971ac0e": {
+      "type": "Multi-column-Slider",
+      "blocks": {
+        "template--17167068725549__87cce37e-5c32-4479-96cb-070e0971ac0e-16705224838b028d35-0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17167068725549__87cce37e-5c32-4479-96cb-070e0971ac0e-16705224838b028d35-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17167068725549__87cce37e-5c32-4479-96cb-070e0971ac0e-16705224838b028d35-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "260ed297-3bae-46f3-ada7-70e480cd62d0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "694444d1-cfad-4e3e-a3c0-6934b171de21": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "82faaff5-5b88-4cdb-9513-81f95b3f41a2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17167068725549__87cce37e-5c32-4479-96cb-070e0971ac0e-16705224838b028d35-0",
+        "template--17167068725549__87cce37e-5c32-4479-96cb-070e0971ac0e-16705224838b028d35-1",
+        "template--17167068725549__87cce37e-5c32-4479-96cb-070e0971ac0e-16705224838b028d35-2",
+        "260ed297-3bae-46f3-ada7-70e480cd62d0",
+        "694444d1-cfad-4e3e-a3c0-6934b171de21",
+        "82faaff5-5b88-4cdb-9513-81f95b3f41a2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Scrollling images",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 6,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1dfa9a91-5c9c-4acb-9e39-f75983e9b2cc",
+    "aab2483b-5db2-47d4-be6b-c1f0d711f527",
+    "form",
+    "87cce37e-5c32-4479-96cb-070e0971ac0e"
+  ]
+}

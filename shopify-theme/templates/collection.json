@@ -1,0 +1,60 @@
+{
+  "sections": {
+    "c325c37f-43b2-49ae-8392-efecf4c666f8": {
+      "type": "image-banner",
+      "blocks": {
+        "template--19851140170029__c325c37f-43b2-49ae-8392-efecf4c666f8-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shop Sponsor a Pet",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--19851140170029__c325c37f-43b2-49ae-8392-efecf4c666f8-heading-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_75.png",
+        "image_overlay_opacity": 20,
+        "image_height": "medium",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "c325c37f-43b2-49ae-8392-efecf4c666f8",
+    "banner",
+    "product-grid"
+  ]
+}

@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;700&display=swap');
+
+.popup__overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+}
+
+.popup__overlay.active {
+    visibility: visible;
+    z-index: 9;
+    opacity: 1;
+}
+
+.popup__box {
+    width: 80%;
+    padding: 24px 0;
+    background: #fff;
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
+    max-height: calc(100vh - 40px);
+    overflow: auto;
+}
+
+.popup__box h2 {
+    color: #333;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+    margin-top: 0;
+}
+
+.popup__close {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    transition: all 200ms ease-out;
+    color: #333;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.25;
+    text-decoration: none;
+}
+
+.popup__close:hover {
+    color: #660000;
+}
+
+.popup__content {
+    max-height: 30%;
+    overflow: auto;
+}
+@media screen and (max-width: 767px) {
+    .popup__box {
+        width: 93%;
+    }
+}
+
+@media (min-width: 900px) { 
+    #donation-modal .popup__box {
+        width: 872px;
+    }
+}
+
+.popup-donation__desktop,
+.popup-donation__mobile {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#donation-modal .donation-title {
+    font-family: 'Assistant', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    color: #004c98;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    #donation-modal .donation-title {
+        font-size: 2.7rem;
+        padding: 0 40px;
+        line-height: 3rem;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+}
+
+#donation-modal .donation-subtitle {
+    font-family: 'Assistant', sans-serif;
+    color: #ff5c18;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    #donation-modal .donation-subtitle {
+        font-size: 2.7rem;
+        margin-top: 3px;
+        margin-bottom: 13px;
+    }
+}
+
+#donation-modal .popup__content {
+    max-height: unset;
+    overflow: unset;
+    text-align: center;
+}
+
+#donation-modal .popup__content p {
+    font-family: 'Assistant', sans-serif;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #003366;
+    padding: 0 8rem;
+}
+
+@media (max-width: 767px) {
+    #donation-modal .popup__content p {
+        font-size: 16px;
+        line-height: 23px;
+        padding: 0 20px;
+    }
+}
+
+#donation-modal .popup__content a {
+    font-family: Assistant, sans-serif;
+    padding: 12px 18px;
+    border: 1px solid #0067CE;
+    background: linear-gradient(0deg, #0067CE, #0067CE), linear-gradient(180deg, #0077EE 0%, #004C98 100%);
+    border: 1px solid rgba(0, 103, 206, 1);
+    border-radius: 7px;
+    margin: 20px auto 0;
+    margin-top: 40px;
+    display: flow-root;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 26px;
+    color: #fff;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+div#donation-modal .overlay_content {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    left: 0;
+    top: 0;
+    opacity: .7;
+    z-index: 1;
+}

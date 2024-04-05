@@ -1,0 +1,5 @@
+[environments.env1]
+theme = "154210042157"
+store = "sponsor-a-pet.myshopify.com"
+password  = "shptka_fe373403ae068cc41e49a5637627c3cd"
+ignore = "config/settings_data.json"

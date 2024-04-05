@@ -1,0 +1,242 @@
+a {
+    text-decoration: none;
+}
+.nps-section *:focus-visible {
+    outline: none;
+    outline-offset: 0;
+    box-shadow: none;
+}
+
+.page--nonprofit-search .banner--content-align-center {
+    max-height: 360px;
+}
+
+.nps-search-panel {
+    text-align: center;
+    text-align: center;
+    margin: 30px 0 40px 0;
+}
+
+.nps-search-panel input {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #DDDDDD;
+    background: #fff;
+    font-size: 14px;
+    padding: 0 45px 0 45px;
+}
+
+.nps-search-items-group .nps-search-img {
+    display: flex;
+    align-items: center;
+    margin: 0 30px 0 10px;
+    text-align: center;
+}
+
+.nps-search-items-group .nps-search-img a {
+    width: 100%;
+}
+
+.nps-search-items-group .nps-search-img img {
+    width: 150px;
+    height: 170px;
+    object-fit: contain;
+}
+
+.nps-search-items-group {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5px;
+}
+
+.template--page-default-3 .button--secondary {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    min-width: 84px;
+    min-height: 40px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.search-items {
+    width: calc(50% - 20px);
+    padding-bottom: 20px;  
+}
+
+.nps-search-item {
+    border: 1px solid #F1F1F1;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    height: 100%;
+}
+
+.nps-search-desc {
+    display: flex;
+    align-items: center;
+}
+
+.nps-search-desc span {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 11px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #003366;
+}
+
+.nps-search-desc h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #004c98;
+    margin: 0 0 5px 0;
+}
+
+.nps-search-desc p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #222;
+    margin: 0;
+}
+
+.nps-search-texts {
+    /* padding: 25px 10px 20px 0; */
+    padding: 0px 10px 10px 0;
+}
+
+.nps-search-panel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 741px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nps-search-panel svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+
+.nps-search-panel .icon-person-group {
+    left: 15px;
+}
+
+.nps-search-panel .icon-search {
+    right: 15px;
+}
+
+.nps-search-panel .icon-close1 {
+    right: 15px;
+    cursor: pointer;
+}
+
+.nps-section {
+    margin-bottom: 30px;
+}
+
+[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    background-color: var(--color);
+    -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23777'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .page--nonprofit-search .banner__content {
+        max-height: 240px;
+    }
+
+    .page--nonprofit-search .banner__media {
+        max-height: 240px;
+    }
+
+    .page--nonprofit-search .banner--content-align-center {
+        max-height: 240px;
+    }
+
+    .page--nonprofit-search .banner__media {
+        position: absolute;
+    }
+
+    .nps-search-panel input {
+        width: 100%;
+    }
+
+    .nps-search-panel .icon-person-group {
+        left: 16px;
+    }
+
+    .nps-search-panel .icon-close1 {
+        right: 13px;
+    }
+
+    .nps-search-item {
+        width: 100%;
+        display: block;
+        padding: 0 22px 20px 22px;
+        margin: 0;
+    }
+
+    .nps-search-desc a {
+        width: 100%;
+        height: 40px;
+        align-items: center;
+        display: flex;
+        justify-content: left;
+    }
+    
+    .nps-search-items-group {
+        margin: 0;
+    }
+
+    .search-items {
+        width: 100%;
+        margin: 10px 0;
+        padding-bottom: 0;
+    }
+
+    .nps-search-texts {
+        padding: 20px 0 0 0;
+        margin-top: 10px;
+    }
+
+    .nps-search-items-group .nps-search-img {
+        margin: 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nps-search-panel {
+        margin: 22px 0 22px;
+    }
+
+    .nps-search-desc span {
+        font-size: 12px;
+    }
+
+    .nps-search-desc h2 {
+        font-size: 22px; 
+    }
+
+    .nps-search-items-group .nps-search-img img {
+        width: 100%;
+        height: 165px;
+    }
+}
+

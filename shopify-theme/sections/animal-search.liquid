@@ -1,0 +1,180 @@
+<link rel="stylesheet" href="{{ 'section-animal-search.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{{ 'component-nonprofit-filter.js' | asset_url }}" defer="defer"></script>
+
+<script>
+  let _species = ''
+  let _breed = ''
+  let _age = ''
+  let _gender = ''
+  let _search = ''
+  let _sort = ''
+  let products
+  let add_properties = []
+  let merged_properties = []
+  let filteredProducts
+  {% assign nonprofit_collections = collections | where: 'template_suffix', 'non-profit'  %}
+  {% for collection in nonprofit_collections %}
+    {% for product in collection.products %}
+      products = {{ collection.products | json }};
+      add_properties.push(
+        Object.assign({}, {
+						              'short_description': "{{ product.description | strip_html | truncate: 70 }}",
+                          'locatoin_city': "{{ product.metafields.custom.location | json_escape | split: 'city":"' | last | split: '","state"' | first | strip | replace: '"', '' | capitalize }}",
+                          'locatoin_state': "{{ product.metafields.custom.location | split: '"state":"' | last | split: '","country"' | first | replace: '"', '' | capitalize | upcase }}",
+                          'donation_amount': {{ product.metafields.custom.donation_amount }},
+                          'donation_percent': {{ product.metafields.custom.donation_amount | times: 100 | divided_by: product.metafields.custom.donation_goal }},
+                          'donation_price': "{{ product.metafields.custom.donation_amount | times: 100 | money }}",
+                          'donation_goal': "{{ product.metafields.custom.donation_goal | times: 100 | money }}",
+          }
+        )
+      );
+      merged_properties = products.map((item, index) => {
+        return { ...item, ...add_properties[index] }
+      })
+      products = merged_properties
+      filteredProducts = merged_properties
+    {% endfor %}
+  {% endfor %}
+</script>
+
+<div class="animal-search section-{{ section.id }}-padding"> 
+  <div class="page-width">
+    <div class="ssap-non-profit-page-filters">
+      <div class="ssap-filters--25 filter-wrap">
+        <div class="ssap-filter-remove">Remove ✖</div>
+        <label>Species</label>
+        <select class="ssap-non-profit-page-select" id="ssap-species">
+          <option selected="selected" value="default_option">All</option>
+          <option value="cat">Cat</option>
+          <option value="dog">Dog</option>
+          <option value="exotic">Exotic</option>
+          <option value="farm">Farm</option>
+          <option value="horse">Horse</option>
+          <option value="other">Other</option>
+          <option value="unknown-species">Unknown</option>
+        </select>
+      </div>
+      <div class="ssap-filters--25 filter-wrap">
+        <div class="ssap-filter-remove">Remove ✖</div>
+        <label>Breed</label>
+        <select class="ssap-non-profit-page-select" id="ssap-breed">
+          <option selected="selected" value="default_option">All</option>
+        </select>
+      </div>
+      <div class="ssap-filters--25 filter-wrap">
+        <div class="ssap-filter-remove">Remove ✖</div>
+        <label>Age</label>
+        <select class="ssap-non-profit-page-select" id="ssap-age">
+          <option selected="selected" value="default_option">All</option>
+          <option value="baby">Baby</option>
+          <option value="young">Young</option>
+          <option value="adult">Adult</option>
+          <option value="senior">Senior</option>
+          <option value="unknown-age">Unknown</option>
+        </select>
+      </div>
+      <div class="ssap-filters--25 filter-wrap">
+        <div class="ssap-filter-remove">Remove ✖</div>
+        <label>Gender</label>
+        <select class="ssap-non-profit-page-select" id="ssap-gender">
+          <option selected="selected" value="default_option">All</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="unknown-gender">Unknown</option>
+        </select>
+      </div>
+      <div class="ssap-filters--50 filter-wrap input-field--wrap">
+        <label>Search</label>
+        <div class="ssap-filter-remove">Remove ✖</div>
+        <div class="ssap-vue-non-profit-filter-input-container">
+          <input
+            type="text"
+            placeholder="Type to search..."
+            class="ssap-non-profit-page-filter-input"
+            id="ssap-search-input">
+          <svg
+            width="22"
+            height="22"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+          </svg>
+        </div>
+      </div>
+      <div class="ssap-filters--50 filter-wrap">
+        <div class="ssap-filter-remove">Remove ✖</div>
+        <label>Sort By</label>
+        <div class="ssap-vue-non-profit-filter-input-container">
+          <select class="ssap-non-profit-page-select" id="ssap-sort">
+            <option selected="selected" value="default_option">All</option>
+            <option value="newest">Date Added (Newest)</option>
+            <option value="oldest">Date Added (Oldest)</option>
+            <option value="most">Amount Funded (Most)</option>
+            <option value="least">Amount Funded (Least)</option>
+            <option value="a-z">Nonprofit Alphabetically (A-Z)</option>
+            <option value="z-a">Nonprofit Alphabetically (Z-A)</option>
+          </select>
+          {%- render 'icon-sortby' -%}
+        </div>
+      </div>
+      <div class="ssap-clear--filter">
+        <div class="ssap-filter-remove clear-all">Clear All Filters ✖</div> 
+      </div>
+    </div>
+    <div class="ssap-non-profit-page-collection">
+      {% assign nonprofit_collections = collections | where: 'template_suffix', 'non-profit'  %}
+      {% for collection in nonprofit_collections %}
+        {% for product in collection.products %}
+          {% assign city = product.metafields.custom.location | json_escape | split: 'city":"' | last | split: '","state"' | first | strip | replace: '"', '' | capitalize %}
+          {% assign state = product.metafields.custom.location | split: '"state":"' | last | split: '","country"' | first | replace: '"', '' | capitalize | upcase %}
+          {% assign location = product.metafields.custom.location | json_escape %}
+          <div class="collection--col">
+            <a href="{{ product.url }}" class="collection-col--donat">
+              <div class="col-donat--img">
+                <h3>{{ product.title }}</h3>
+                <img src="{{ product.featured_image | img_url: 'master' }}">
+              </div>
+              {% if product.metafields.custom.donation_goal %}
+                <div class="col-donate--price">
+                  <p>${{ product.metafields.custom.donation_goal }}</p>
+                  <p>DONATIONS NEEDED</p>
+                </div>
+              {% endif %}
+              <div class="coll--main">
+                <button>Donate Now</button>
+                <p class="coll-value--persent">{{ product.metafields.custom.donation_amount | times: 100 | divided_by: product.metafields.custom.donation_goal }}% Donation completed</p>
+                <div class="coll-valueline">
+                  <span style="--value:{{ product.metafields.custom.donation_amount | times: 100 | divided_by: product.metafields.custom.donation_goal }}%;"></span>
+                </div>
+                <div class="coll-desc">{{ product.description | strip_html | truncate: 90 }}</div>
+                  <span class="coll-loc">{%- render 'icon-location' -%}{{ city }}, {{ state }}</span>
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Animal Search",
+    "settings": [
+    ],
+    "presets": [
+      {
+        "name": "Animal Search"
+      }
+    ]
+  }
+{% endschema %}

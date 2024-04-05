@@ -1,0 +1,135 @@
+<link rel="stylesheet" href="{{ 'section-non-profit-save-many.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<div class="non-profit-savemany section-{{ section.id }}-padding" data-aos="zoom-in">
+  <div class="page-width">
+    <div class="savemany--flex">
+      <div class="savemany--col70">
+        <div class="savemany--elem1">
+          {%- if collection.title != blank -%}
+            <h2 class="title h1">Exclusively SupportNo {{ collection.title }} Monthly</h2>
+          {%- elsif section.settings.heading != blank -%}
+            <h2 class="title h1">{{ section.settings.heading }}</h2>
+          {%- endif -%}
+          {%- if section.settings.description != blank -%}
+            <div>{{ section.settings.description }}</div>
+          {%- endif -%}
+        </div>
+        <div class="savemany--elem2">
+          <ul>
+            {%- for block in section.blocks -%}
+              <li>
+                <a href="{{ block.settings.url }}" class="button {% if block.settings.disable_icon_btn %}button--primary{% endif %}">{{ block.settings.label }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{% schema %}
+  {
+    "name": "Save Many",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Select Image"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description"
+      },
+      {
+        "type": "header",
+        "content": "Donation Title"
+      }, {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      }, {
+        "type": "header",
+        "content": "Button"
+      }, {
+        "type": "text",
+        "id": "sum_text",
+        "label": "Sum Text"
+      }, {
+        "type": "url",
+        "id": "url",
+        "label": "Button URL"
+      }, {
+        "type": "text",
+        "id": "label",
+        "label": "Button label"
+      }, {
+        "type": "text",
+        "id": "policy_content",
+        "label": "Add Policy Content"
+      }, {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      }, {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ],
+    "blocks": [
+      {
+        "type": "block",
+        "name": "Donation Money",
+        "settings": [
+          {
+            "type": "url",
+            "id": "url",
+            "label": "Button URL"
+          }, {
+            "type": "text",
+            "id": "label",
+            "label": "Button label"
+          },{
+            "type": "checkbox",
+            "id": "disable_icon_btn",
+            "label": "Disable icon",
+            "default": false
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

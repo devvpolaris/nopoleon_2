@@ -1,0 +1,58 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-register",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "9b7e1d7d-dcda-4d4a-b889-c595a80282c7": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18405700567341__9b7e1d7d-dcda-4d4a-b889-c595a80282c7-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Non-Profits Registration<\/p>",
+            "heading_size": "h1",
+            "color": "#0067ce"
+          }
+        },
+        "template--18405700567341__9b7e1d7d-dcda-4d4a-b889-c595a80282c7-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We welcome partnerships with 501(c)3 organizations dedicated to helping animals. For more information, contact hello@sponsorapet.org.<\/p>",
+            "color": "#222222"
+          }
+        }
+      },
+      "block_order": [
+        "template--18405700567341__9b7e1d7d-dcda-4d4a-b889-c595a80282c7-heading-1",
+        "template--18405700567341__9b7e1d7d-dcda-4d4a-b889-c595a80282c7-text-1"
+      ],
+      "settings": {
+        "is_top_wave": false,
+        "is_bottom_wave": false,
+        "section_style": "normal",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "2425c601-e297-42d2-8083-f08e43ccd0a8": {
+      "type": "non-profit-signup",
+      "settings": {
+        "form_url": "localhost:3000\/api\/v1\/requests"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "9b7e1d7d-dcda-4d4a-b889-c595a80282c7",
+    "2425c601-e297-42d2-8083-f08e43ccd0a8"
+  ]
+}

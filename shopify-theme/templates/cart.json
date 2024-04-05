@@ -1,0 +1,109 @@
+{
+  "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {
+      }
+    },
+    "1db3223d-5906-4a08-a4ad-1c09e5d2e886": {
+      "type": "rich-text",
+      "blocks": {
+        "c2261aa4-a001-4201-a6b5-b53330045489": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>JOIN PETSTAR CLUB<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--17005643563309__1db3223d-5906-4a08-a4ad-1c09e5d2e886-1670098216567e2aa6-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "10$",
+            "button_link": "https:\/\/sponsor-a-pet.myshopify.com\/cart\/clear?return_to=%2Fcart%2Fadd%3Fitems%5B0%5D%5Bid%5D%3D44032492372269%26items%5B0%5D%5Bquantity%5D%3D1%26items%5B0%5D%5Bselling_plan%5D%3D685077954861%26return_to%3D%252Fcheckout%253F",
+            "button_style_secondary": false,
+            "button_label_2": "25$",
+            "button_link_2": "https:\/\/sponsor-a-pet.myshopify.com\/cart\/clear?return_to=%2Fcart%2Fadd%3Fitems%5B0%5D%5Bid%5D%3D44032471269677%26items%5B0%5D%5Bquantity%5D%3D1%26items%5B0%5D%5Bselling_plan%5D%3D685077987629%26return_to%3D%252Fcheckout%253F",
+            "button_style_secondary_2": false,
+            "button_label_3": "50$",
+            "button_link_3": "https:\/\/sponsor-a-pet.myshopify.com\/cart\/clear?return_to=%2Fcart%2Fadd%3Fitems%5B0%5D%5Bid%5D%3D44032501317933%26items%5B0%5D%5Bquantity%5D%3D1%26items%5B0%5D%5Bselling_plan%5D%3D685078020397%26return_to%3D%252Fcheckout%253F",
+            "button_style_secondary_3": false,
+            "button_label_4": "100$",
+            "button_link_4": "https:\/\/sponsor-a-pet.myshopify.com\/cart\/clear?return_to=%2Fcart%2Fadd%3Fitems%5B0%5D%5Bid%5D%3D44032505938221%26items%5B0%5D%5Bquantity%5D%3D1%26items%5B0%5D%5Bselling_plan%5D%3D685078053165%26return_to%3D%252Fcheckout%253F",
+            "button_style_secondary_4": false,
+            "button_label_5": "OTHER",
+            "button_link_5": "shopify:\/\/products\/sponsor-a-pet",
+            "button_style_secondary_5": false
+          }
+        }
+      },
+      "block_order": [
+        "c2261aa4-a001-4201-a6b5-b53330045489",
+        "template--17005643563309__1db3223d-5906-4a08-a4ad-1c09e5d2e886-1670098216567e2aa6-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "home",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "cart-items",
+    "cart-footer",
+    "1db3223d-5906-4a08-a4ad-1c09e5d2e886",
+    "featured-collection"
+  ]
+}

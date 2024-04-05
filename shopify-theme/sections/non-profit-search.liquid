@@ -1,0 +1,89 @@
+<link rel="stylesheet" href="{{ 'section-non-profit-search.css' | asset_url }}" media="print" onload="this.media='all'">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+  let collectionData = {{ collections | json }};
+  let _search = ''
+  let filteredProducts = collectionData; 
+  {% for collection in collections %} 
+    var index = {{ forloop.index | minus: 1 }};
+    collectionData[index] = Object.assign({}, collectionData[index], {'url': '{{ collection.url }}'});
+    collectionData[index] = Object.assign({}, collectionData[index], {'metafields': {{ collection.metafields.custom | json }}});
+    collectionData[index] = Object.assign({}, collectionData[index], {'description': {{ collection.description | strip_html | truncate: 280 | json }}});
+  {% endfor %}
+</script>
+<script src="{{ 'component-nonprofit-search.js' | asset_url }}"></script>
+
+<div class="non-profit-search section-{{ section.id }}-padding" data-aos="zoom-in">
+  <div class="page-width">
+    <div class="nps-section">
+        <div class="nps-search-panel">  
+            {% render 'icon-person-group' %}
+            <span class="nps-icon__search">{% render 'icon-search' %}</span>
+            <span class="nps-icon__close hidden">{% render 'icon-close1' %}</span>
+            <div class="ssap-filter-remove">Remove ✖</div>
+            <input class="nps-search" id="nps-search-input" type="text" placeholder="Type to search by name, location, etc." style="--color: #AAAAAA;" />
+        </div>
+        <div class="nps-search-items-group">
+            {%- for collection in collections -%}
+                {%- liquid 
+                    assign location = collection.metafields.custom.location
+                    assign city = location | split: '","state":"' | first | split: ':"' | last
+                    assign state = location | split: '","state":"' | last | split: '"}' | first
+                -%}
+                {%- if collection.template_suffix == "non-profit" -%}                    
+                    <div class="search-items">
+                        <div class="nps-search-item">    
+                            <div class="nps-search-img"> 
+                                <a href="{{ collection.url }}"><img src="{{ collection.featured_image | img_url: 'master' }}"></a>
+                            </div>
+                            <div class="nps-search-desc">
+                                <div class="nps-search-texts">
+                                    {%- if location != blank -%}
+                                        <span class="nps-city-state">{{ city }}, {{ state }}</span>
+                                    {%- endif -%} 
+                                    {%- if collection.title -%} 
+                                        <a href="{{ collection.url }}"><h2>{{ collection.title }}</h2></a>
+                                    {%- endif -%} 
+                                    {%- assign desc =  collection.description | strip_html | truncate: 280 -%}
+                                    {% if desc %}
+                                        <p>{{ desc }}</p>
+                                    {% endif %}
+                                    <a href="{{ collection.url }}" class="button button--secondary">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                {%- endif -%}
+            {%- endfor -%}
+        </div>
+    </div>
+  </div>
+</div>
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{% schema %}
+  {
+    "name": "Non Profit Search",
+    "settings": [
+    ],
+    "presets": [
+      {
+        "name": "Nonprofit Search"
+      }
+    ]
+  }
+{% endschema %}
